@@ -1,2817 +1,379 @@
 {
+
   "JavaScript": [
-    {
-      "q": "What are the primitive data types in JavaScript? (#1)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#2)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#3)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#4)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#5)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#6)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#7)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#8)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#9)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#10)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#11)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#12)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#13)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#14)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#15)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#16)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#17)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#18)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#19)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#20)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#21)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#22)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#23)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#24)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#25)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#26)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#27)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#28)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#29)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#30)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#31)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#32)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#33)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#34)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#35)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#36)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#37)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#38)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#39)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#40)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#41)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#42)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#43)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#44)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#45)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#46)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#47)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#48)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#49)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#50)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#51)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#52)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#53)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#54)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#55)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#56)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#57)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#58)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#59)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#60)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#61)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#62)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#63)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#64)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#65)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#66)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#67)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#68)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#69)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#70)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#71)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#72)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#73)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#74)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#75)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#76)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#77)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#78)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#79)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#80)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#81)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#82)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#83)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#84)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#85)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#86)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#87)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#88)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#89)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#90)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#91)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#92)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#93)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#94)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#95)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    },
-    {
-      "q": "What are the primitive data types in JavaScript? (#96)",
-      "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."
-    },
-    {
-      "q": "What is a closure? (#97)",
-      "a": "A function that remembers variables from its lexical scope even after the scope is closed."
-    },
-    {
-      "q": "What is hoisting? (#98)",
-      "a": "Declarations are moved to the top of scope before execution."
-    },
-    {
-      "q": "Explain event loop. (#99)",
-      "a": "It handles async operations by processing call stack and callback queue."
-    },
-    {
-      "q": "Difference between var, let, const? (#100)",
-      "a": "var=function-scoped, let/const=block-scoped."
-    }
+    {"q": "What are the different data types in JavaScript?", "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."},
+    {"q": "Explain closure with an example.", "a": "A closure is a function that has access to its own scope, the outer function's scope, and the global scope."},
+    {"q": "What is the event loop?", "a": "It handles asynchronous tasks by processing the call stack and the callback queue in JavaScript."},
+    {"q": "Difference between var, let, and const?", "a": "var is function scoped, let and const are block scoped; const cannot be reassigned."},
+    {"q": "What is hoisting in JavaScript?", "a": "Hoisting is JavaScript's behavior of moving declarations to the top of the current scope before execution."},
+    {"q": "What are arrow functions?", "a": "Arrow functions provide a shorter syntax and do not bind their own 'this'."},
+    {"q": "What is 'this' keyword?", "a": "'this' refers to the object that is executing the current function."},
+    {"q": "What are promises?", "a": "Promises represent the eventual completion (or failure) of an asynchronous operation."},
+    {"q": "What is async/await?", "a": "Syntax for handling asynchronous operations more easily, based on promises."},
+    {"q": "Explain prototype in JavaScript.", "a": "Every object has a prototype object from which it can inherit properties and methods."},
+    {"q": "Difference between == and ===?", "a": "== compares values with type coercion, === compares values strictly without coercion."},
+    {"q": "What is NaN?", "a": "Not-a-Number, represents an invalid number operation."},
+    {"q": "What is typeof NaN?", "a": "typeof NaN returns 'number'."},
+    {"q": "What are template literals?", "a": "Strings enclosed in backticks (`) that allow interpolation using ${expression}."},
+    {"q": "What is destructuring?", "a": "Extracting values from arrays or objects into variables."},
+    {"q": "Difference between for..in and for..of?", "a": "for..in iterates over keys, for..of iterates over values."},
+    {"q": "What is event delegation?", "a": "Attaching a single event listener on a parent element to handle events on children."},
+    {"q": "What is IIFE?", "a": "Immediately Invoked Function Expression - a function executed immediately after definition."},
+    {"q": "What is strict mode?", "a": "A way to opt into a restricted variant of JavaScript, catching common coding mistakes."},
+    {"q": "What are higher-order functions?", "a": "Functions that take other functions as arguments or return functions."},
+    {"q": "What is the difference between shallow copy and deep copy?", "a": "Shallow copy copies top-level objects, deep copy duplicates nested objects as well."},
+    {"q": "Explain map, filter, reduce methods.", "a": "Array methods to transform, filter, or reduce array data."},
+    {"q": "What is JSON?", "a": "JavaScript Object Notation, a lightweight data interchange format."},
+    {"q": "What is the difference between null and undefined?", "a": "null = intentional absence of value, undefined = variable declared but not assigned."},
+    {"q": "What is callback function?", "a": "A function passed as an argument to another function to be executed later."},
+    {"q": "What is function hoisting?", "a": "Function declarations are hoisted to the top of their scope, allowing calls before declaration."},
+    {"q": "What is the difference between function declaration and expression?", "a": "Declaration is hoisted, expression is not."},
+    {"q": "What are modules in JavaScript?", "a": "Files or pieces of code that can export and import functionality."},
+    {"q": "What are symbols?", "a": "Unique and immutable primitive values used as object property keys."},
+    {"q": "What is BigInt?", "a": "A numeric type that can represent integers larger than Number.MAX_SAFE_INTEGER."},
+    {"q": "What are generators?", "a": "Functions that can be paused and resumed using the yield keyword."},
+    {"q": "Difference between synchronous and asynchronous code?", "a": "Synchronous executes line by line; asynchronous runs operations in background."},
+    {"q": "What is microtask queue?", "a": "Queue for promises and mutation observers, executed before macrotasks."},
+    {"q": "What is setTimeout vs setInterval?", "a": "setTimeout executes once after delay, setInterval repeats at intervals."},
+    {"q": "What is localStorage?", "a": "Browser storage persisting data even after page reload."},
+    {"q": "What is sessionStorage?", "a": "Browser storage persisting data until tab is closed."},
+    {"q": "Difference between call, apply, and bind?", "a": "call: invoke function with args, apply: invoke with array, bind: returns new function."},
+    {"q": "What is event bubbling?", "a": "Events propagate from child elements up to parent elements."},
+    {"q": "What is event capturing?", "a": "Events propagate from parent elements down to child elements before bubbling."},
+    {"q": "What is debounce function?", "a": "Delays execution of a function until after a certain wait time has passed."},
+    {"q": "What is throttle function?", "a": "Ensures a function is called at most once every specified interval."},
+    {"q": "Difference between object.freeze and const?", "a": "const prevents reassignment of variable, freeze prevents modification of object properties."},
+    {"q": "What is JSON.stringify and JSON.parse?", "a": "Convert objects to JSON string and parse JSON string to object."},
+    {"q": "Difference between synchronous loop and asynchronous loop?", "a": "Synchronous loop blocks execution, asynchronous loop does not."},
+    {"q": "What is a promise chain?", "a": "Sequential execution of multiple promises using then() methods."},
+    {"q": "What is an async iterator?", "a": "Iterator that can be used with for-await-of loop to handle async data streams."},
+    {"q": "What is a WeakMap?", "a": "Collection of key-value pairs with weakly held keys (garbage collected if no reference)."},
+    {"q": "What is a WeakSet?", "a": "Collection of objects held weakly, automatically removed when no references exist."},
+    {"q": "What is module pattern?", "a": "Design pattern used to encapsulate private and public methods in JS."},
+    {"q": "Difference between ES5 and ES6?", "a": "ES6 introduces let/const, arrow functions, classes, promises, template literals, modules."},
+    {"q": "What is tail call optimization?", "a": "Optimization technique where last function call in a function can reuse current stack frame."},
+    {"q": "What is currying?", "a": "Transforming a function with multiple arguments into a sequence of functions each taking one argument."},
+    {"q": "What is memoization?", "a": "Optimization technique to cache results of expensive function calls."},
+    {"q": "What is strict equality in JavaScript?", "a": "Comparison using === operator without type conversion."}
   ],
   "Node.js": [
-    {
-      "q": "What is EventEmitter? (#1)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#2)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#3)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#4)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#5)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#6)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#7)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#8)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#9)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#10)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#11)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#12)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#13)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#14)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#15)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#16)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#17)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#18)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#19)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#20)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#21)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#22)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#23)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#24)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#25)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#26)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#27)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#28)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#29)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#30)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#31)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#32)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#33)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#34)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#35)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#36)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#37)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#38)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#39)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#40)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#41)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#42)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#43)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#44)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#45)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#46)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#47)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#48)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#49)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#50)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#51)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#52)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#53)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#54)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#55)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#56)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#57)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#58)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#59)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#60)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#61)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#62)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#63)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#64)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#65)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#66)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#67)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#68)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#69)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#70)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#71)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#72)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#73)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#74)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#75)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#76)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#77)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#78)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#79)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#80)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#81)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#82)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#83)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#84)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#85)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#86)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#87)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#88)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#89)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#90)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#91)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#92)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#93)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#94)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#95)",
-      "a": "A global object to handle binary data."
-    },
-    {
-      "q": "What is EventEmitter? (#96)",
-      "a": "It facilitates event-driven programming with emitters and listeners."
-    },
-    {
-      "q": "Difference between process.nextTick() and setImmediate()? (#97)",
-      "a": "nextTick runs before event loop continues, setImmediate runs next iteration."
-    },
-    {
-      "q": "What is middleware? (#98)",
-      "a": "Functions that execute during request-response cycle."
-    },
-    {
-      "q": "What is npm? (#99)",
-      "a": "Node Package Manager for installing packages."
-    },
-    {
-      "q": "What is Buffer? (#100)",
-      "a": "A global object to handle binary data."
-    }
+    {"q": "What is Node.js?", "a": "Node.js is a JavaScript runtime built on Chrome's V8 engine for server-side development."},
+    {"q": "What is the difference between Node.js and JavaScript in the browser?", "a": "Node.js runs on the server, browser JS runs on client-side."},
+    {"q": "What is EventEmitter in Node.js?", "a": "EventEmitter is a core module that facilitates event-driven programming with emitters and listeners."},
+    {"q": "What is the difference between process.nextTick() and setImmediate()?", "a": "nextTick runs before the next event loop iteration, setImmediate runs on the next iteration."},
+    {"q": "What is middleware in Express.js?", "a": "Functions executed during the request-response cycle, which can modify request/response or call next middleware."},
+    {"q": "What is npm?", "a": "Node Package Manager for installing and managing Node.js packages."},
+    {"q": "What is a buffer in Node.js?", "a": "Global object to handle binary data streams."},
+    {"q": "What are streams in Node.js?", "a": "Objects used to read or write data piece by piece instead of loading it all at once."},
+    {"q": "What is the difference between readable and writable streams?", "a": "Readable streams allow reading data, writable streams allow writing data."},
+    {"q": "What is the difference between synchronous and asynchronous APIs in Node.js?", "a": "Synchronous APIs block execution, asynchronous APIs do not."},
+    {"q": "What is callback hell?", "a": "Nested callbacks making code hard to read and maintain."},
+    {"q": "What is a promise in Node.js?", "a": "An object representing eventual completion or failure of an asynchronous operation."},
+    {"q": "What is async/await in Node.js?", "a": "Syntactic sugar over promises to write asynchronous code in a synchronous style."},
+    {"q": "What is cluster module in Node.js?", "a": "Allows running multiple Node.js processes to utilize multi-core CPUs."},
+    {"q": "What is the difference between fork() and spawn() in Node.js?", "a": "spawn launches a new process, fork launches a new Node.js instance with IPC support."},
+    {"q": "What is CORS in Node.js?", "a": "Cross-Origin Resource Sharing, a mechanism to allow restricted resources on a web page to be requested from another domain."},
+    {"q": "What is the difference between require and import?", "a": "require is CommonJS syntax, import is ES6 module syntax."},
+    {"q": "What is the difference between __dirname and process.cwd()?", "a": "__dirname gives the directory of the current module, process.cwd() gives the current working directory."},
+    {"q": "What are global objects in Node.js?", "a": "Objects accessible anywhere without requiring modules, e.g., global, process, Buffer."},
+    {"q": "What is the difference between module.exports and exports?", "a": "module.exports is the actual exported object, exports is a reference to module.exports."},
+    {"q": "What is event loop in Node.js?", "a": "Handles non-blocking I/O by processing callbacks from queues and phases."},
+    {"q": "What is the difference between setImmediate and setTimeout in Node.js?", "a": "setImmediate executes after I/O events, setTimeout executes after specified delay."},
+    {"q": "What is process object in Node.js?", "a": "Provides information about the current Node.js process and methods to interact with it."},
+    {"q": "What is process.env in Node.js?", "a": "Object containing user environment variables."},
+    {"q": "What is REPL in Node.js?", "a": "Read-Eval-Print Loop, an interactive shell for running Node.js code."},
+    {"q": "What is the difference between child_process.spawn and exec?", "a": "spawn returns streams, exec buffers output and has callback when complete."},
+    {"q": "What is a global module in Node.js?", "a": "A module installed globally to be used across projects using -g flag."},
+    {"q": "What is local module in Node.js?", "a": "Modules installed in project node_modules directory."},
+    {"q": "What is package.json?", "a": "Metadata file for Node.js project containing dependencies and scripts."},
+    {"q": "What is semantic versioning in Node.js?", "a": "Versioning convention using MAJOR.MINOR.PATCH to indicate backward compatibility."},
+    {"q": "What is error-first callback?", "a": "Callback pattern where the first argument is an error, and second is result."},
+    {"q": "What is process.nextTick()?", "a": "Schedules a callback to be invoked in the next iteration of the event loop, before other I/O events."},
+    {"q": "What is domain module in Node.js?", "a": "Deprecated module for handling multiple different I/O operations as a single group."},
+    {"q": "What is the difference between synchronous require() and asynchronous import()?", "a": "require() is blocking, import() returns a promise and is non-blocking."},
+    {"q": "What is the difference between readable.pipe() and readable.on('data')?", "a": "pipe streams data automatically to writable, 'data' requires manual handling."},
+    {"q": "What is the purpose of Node.js crypto module?", "a": "Provides cryptographic functionality like hashing, encryption, and signing."},
+    {"q": "What is process.exit()?", "a": "Terminates the Node.js process with optional exit code."},
+    {"q": "What is uncaughtException event?", "a": "Event emitted when an exception bubbles all the way back to the event loop."},
+    {"q": "What is require.cache?", "a": "Object storing cached modules to prevent reloading."},
+    {"q": "What is the difference between synchronous and asynchronous file I/O?", "a": "Synchronous blocks execution until operation finishes, asynchronous uses callbacks."},
+    {"q": "What is the purpose of the path module in Node.js?", "a": "Provides utilities for working with file and directory paths."},
+    {"q": "What is the difference between process.argv and process.env?", "a": "argv contains command-line arguments, env contains environment variables."},
+    {"q": "What is a readable stream in Node.js?", "a": "Stream from which data can be read sequentially."},
+    {"q": "What is a writable stream in Node.js?", "a": "Stream to which data can be written sequentially."},
+    {"q": "What is Duplex stream in Node.js?", "a": "Stream that is both readable and writable."},
+    {"q": "What is Transform stream in Node.js?", "a": "Duplex stream that can modify the data as it is read or written."},
+    {"q": "What is the difference between npm install and npm install --save?", "a": "--save adds the package to dependencies in package.json."},
+    {"q": "What is Node.js REPL command '.help'?", "a": "Displays help commands in the interactive Node.js shell."},
+    {"q": "What is the purpose of util.promisify?", "a": "Converts callback-based functions to return promises."},
+    {"q": "What is the difference between HTTP and HTTPS module in Node.js?", "a": "HTTPS module provides encrypted communication using TLS/SSL, HTTP is unencrypted."},
+    {"q": "What is the purpose of os module in Node.js?", "a": "Provides operating system-related utility methods and properties."},
+    {"q": "What is cluster.fork() in Node.js?", "a": "Creates a new worker process to share server load in multi-core systems."}
   ],
   "React.js": [
-    {
-      "q": "What are hooks? (#1)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#2)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#3)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#4)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#5)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#6)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#7)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#8)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#9)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#10)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#11)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#12)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#13)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#14)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#15)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#16)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#17)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#18)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#19)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#20)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#21)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#22)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#23)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#24)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#25)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#26)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#27)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#28)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#29)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#30)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#31)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#32)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#33)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#34)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#35)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#36)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#37)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#38)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#39)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#40)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#41)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#42)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#43)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#44)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#45)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#46)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#47)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#48)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#49)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#50)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#51)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#52)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#53)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#54)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#55)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#56)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#57)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#58)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#59)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#60)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#61)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#62)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#63)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#64)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#65)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#66)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#67)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#68)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#69)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#70)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#71)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#72)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#73)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#74)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#75)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#76)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#77)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#78)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#79)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#80)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#81)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#82)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#83)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#84)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#85)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#86)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#87)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#88)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#89)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#90)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#91)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#92)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#93)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#94)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#95)",
-      "a": "Library for routing in React apps."
-    },
-    {
-      "q": "What are hooks? (#96)",
-      "a": "Functions like useState, useEffect for state and lifecycle in functional components."
-    },
-    {
-      "q": "Difference between state and props? (#97)",
-      "a": "Props are inputs, state is local to component."
-    },
-    {
-      "q": "What is JSX? (#98)",
-      "a": "Syntax extension to write HTML inside JS."
-    },
-    {
-      "q": "What is virtual DOM? (#99)",
-      "a": "Lightweight copy of DOM for efficient updates."
-    },
-    {
-      "q": "What is React Router? (#100)",
-      "a": "Library for routing in React apps."
-    }
+    {"q": "What is React.js?", "a": "React.js is a JavaScript library for building user interfaces, developed by Facebook."},
+    {"q": "What are components in React?", "a": "Components are reusable pieces of UI in React, either class-based or functional."},
+    {"q": "What is the difference between state and props?", "a": "State is internal to a component and can change, props are inputs passed from parent and are read-only."},
+    {"q": "What are React hooks?", "a": "Functions like useState and useEffect that let you use state and lifecycle features in functional components."},
+    {"q": "What is JSX?", "a": "JSX is a syntax extension for JavaScript that allows writing HTML-like code inside JavaScript."},
+    {"q": "What is virtual DOM?", "a": "A lightweight copy of the real DOM for efficient updates in React."},
+    {"q": "What is the difference between class and functional components?", "a": "Class components have lifecycle methods and state, functional components use hooks for state and side effects."},
+    {"q": "What is the useEffect hook?", "a": "useEffect allows performing side effects in functional components, like fetching data or manipulating DOM."},
+    {"q": "What is the useState hook?", "a": "useState allows adding state to functional components."},
+    {"q": "What is the difference between controlled and uncontrolled components?", "a": "Controlled components have their value managed by React state, uncontrolled components store value in DOM."},
+    {"q": "What is the purpose of keys in React lists?", "a": "Keys help React identify which items have changed, are added, or removed, improving performance."},
+    {"q": "What is the difference between React Router and traditional routing?", "a": "React Router allows client-side routing without page reloads, traditional routing reloads pages from server."},
+    {"q": "What is context API in React?", "a": "Context API allows passing data through the component tree without prop drilling."},
+    {"q": "What is the difference between useMemo and useCallback?", "a": "useMemo memoizes a value, useCallback memoizes a function."},
+    {"q": "What is the purpose of React.Fragment?", "a": "Fragments let you group multiple elements without adding extra nodes to the DOM."},
+    {"q": "What is the difference between componentDidMount and useEffect?", "a": "componentDidMount runs once after mounting in class components, useEffect can run on mount, update, or unmount in functional components."},
+    {"q": "What are higher-order components (HOC)?", "a": "HOCs are functions that take a component and return a new enhanced component."},
+    {"q": "What is the difference between pure component and regular component?", "a": "PureComponent implements shallow comparison for props and state to prevent unnecessary re-renders."},
+    {"q": "What is reconciliation in React?", "a": "Process of comparing new virtual DOM with old virtual DOM to efficiently update the real DOM."},
+    {"q": "What is lazy loading in React?", "a": "Technique to load components or modules only when needed to improve performance."},
+    {"q": "What is suspense in React?", "a": "Suspense allows waiting for lazy-loaded components or data fetching before rendering fallback content."},
+    {"q": "What is the difference between stateful and stateless components?", "a": "Stateful components have internal state, stateless components rely entirely on props."},
+    {"q": "What is prop drilling and how to avoid it?", "a": "Prop drilling is passing props through multiple layers; avoided using Context API or state management libraries."},
+    {"q": "What is the difference between React and Angular?", "a": "React is a library focusing on UI, Angular is a full-fledged framework with more features."},
+    {"q": "What is the difference between React and Vue?", "a": "React uses JSX and a virtual DOM; Vue uses template syntax and provides an integrated ecosystem."},
+    {"q": "What is the difference between useRef and createRef?", "a": "useRef is used in functional components, createRef is used in class components."},
+    {"q": "What is synthetic event in React?", "a": "Cross-browser wrapper around native events to provide consistent behavior."},
+    {"q": "What is the difference between React 16 and 17?", "a": "React 17 focuses on gradual upgrades and improved event delegation, no new features."},
+    {"q": "What is the difference between React 17 and 18?", "a": "React 18 introduces concurrent rendering and automatic batching of updates."},
+    {"q": "What is concurrent mode in React 18?", "a": "Concurrent mode allows React to prepare multiple versions of UI without blocking the main thread."},
+    {"q": "What is the difference between default and named exports?", "a": "Default export allows a single export per file, named exports allow multiple exports."},
+    {"q": "What is error boundary in React?", "a": "Component that catches JavaScript errors anywhere in its child component tree and displays fallback UI."},
+    {"q": "What is server-side rendering (SSR) in React?", "a": "Rendering React components on the server to send fully rendered HTML to clients."},
+    {"q": "What is the difference between SSR and CSR?", "a": "SSR renders pages on server, CSR renders pages on client browser."},
+    {"q": "What is the difference between ReactDOM.render and createRoot?", "a": "createRoot is used in React 18 for concurrent features, ReactDOM.render is legacy."},
+    {"q": "What is hydration in React?", "a": "Hydration is attaching event listeners to server-rendered HTML for client-side interactivity."},
+    {"q": "What is memoization in React?", "a": "Optimization technique to cache computed values or components to prevent unnecessary re-renders."},
+    {"q": "What is the difference between state lifting and context?", "a": "Lifting state shares data between parent and child, context allows passing data deeper without prop drilling."},
+    {"q": "What is reconciliation and diffing algorithm?", "a": "Algorithm to compare new virtual DOM with previous one to update only changed parts."},
+    {"q": "What is the difference between key and ref in React?", "a": "Key helps React track list items for rendering, ref gives access to DOM or component instance."},
+    {"q": "What is the difference between controlled and uncontrolled inputs?", "a": "Controlled inputs are bound to state, uncontrolled inputs use DOM for value."},
+    {"q": "What is Portals in React?", "a": "Portals allow rendering children into a DOM node outside the parent hierarchy."},
+    {"q": "What is the difference between useLayoutEffect and useEffect?", "a": "useLayoutEffect fires synchronously after DOM mutations, useEffect fires asynchronously after render."},
+    {"q": "What is the difference between React.memo and PureComponent?", "a": "React.memo is HOC for functional components, PureComponent is for class components."},
+    {"q": "What is the difference between render props and HOC?", "a": "Render props pass a function as a prop, HOC wraps a component and returns enhanced component."},
+    {"q": "What is reconciliation strategy for lists?", "a": "Use unique keys to help React efficiently update list items."},
+    {"q": "What is the difference between useReducer and useState?", "a": "useReducer is preferred for complex state logic, useState for simple state management."},
+    {"q": "What is React Profiler?", "a": "Tool to measure performance of React components and detect bottlenecks."},
+    {"q": "What is hydration mismatch warning?", "a": "Occurs when server-rendered HTML doesn't match client-side rendering."},
+    {"q": "What is the difference between lazy loading components and code splitting?", "a": "Lazy loading is for individual components, code splitting divides app into multiple bundles."},
+    {"q": "What is the purpose of forwardRef?", "a": "Allows passing ref from parent to child component to access DOM or instance."},
+    {"q": "What is SuspenseList in React 18?", "a": "Component that coordinates the order in which multiple Suspense components show their content."},
+    {"q": "What is the difference between batch updates and individual updates?", "a": "Batch updates combine multiple state changes to reduce re-renders, individual updates render immediately."},
+    {"q": "What is the purpose of useImperativeHandle?", "a": "Customizes the instance value exposed to parent when using ref."},
+    {"q": "What is the difference between controlled component and uncontrolled component?", "a": "Controlled component value is managed by React state, uncontrolled uses DOM for state."}
   ],
   "Vue.js": [
-    {
-      "q": "What is Vuex? (#1)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#2)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#3)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#4)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#5)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#6)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#7)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#8)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#9)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#10)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#11)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#12)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#13)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#14)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#15)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#16)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#17)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#18)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#19)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#20)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#21)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#22)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#23)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#24)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#25)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#26)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#27)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#28)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#29)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#30)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#31)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#32)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#33)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#34)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#35)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#36)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#37)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#38)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#39)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#40)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#41)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#42)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#43)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#44)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#45)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#46)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#47)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#48)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#49)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#50)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#51)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#52)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#53)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#54)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#55)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#56)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#57)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#58)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#59)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#60)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#61)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#62)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#63)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#64)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#65)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#66)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#67)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#68)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#69)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#70)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#71)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#72)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#73)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#74)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#75)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#76)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#77)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#78)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#79)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#80)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#81)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#82)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#83)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#84)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#85)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#86)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#87)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#88)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#89)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#90)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#91)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#92)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#93)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#94)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#95)",
-      "a": "Functions called at specific stages of component lifecycle."
-    },
-    {
-      "q": "What is Vuex? (#96)",
-      "a": "State management library for Vue.js."
-    },
-    {
-      "q": "Difference between v-if and v-show? (#97)",
-      "a": "v-if conditionally renders, v-show toggles visibility."
-    },
-    {
-      "q": "What is a directive? (#98)",
-      "a": "Special tokens in template syntax to apply behavior."
-    },
-    {
-      "q": "What is a component? (#99)",
-      "a": "Reusable Vue instance with template, script, style."
-    },
-    {
-      "q": "What is lifecycle hook? (#100)",
-      "a": "Functions called at specific stages of component lifecycle."
-    }
+    {"q": "What is Vue.js?", "a": "Vue.js is a progressive JavaScript framework for building user interfaces."},
+    {"q": "What is Vuex?", "a": "Vuex is a state management library for Vue.js applications."},
+    {"q": "Difference between v-if and v-show?", "a": "v-if conditionally renders elements, v-show toggles visibility using CSS."},
+    {"q": "What is a directive in Vue.js?", "a": "Special attributes in templates that provide reactive behavior, e.g., v-bind, v-model."},
+    {"q": "What is a component in Vue.js?", "a": "Reusable Vue instance with template, script, and style."},
+    {"q": "What are lifecycle hooks in Vue.js?", "a": "Functions called at specific stages of a component's lifecycle, e.g., created, mounted."},
+    {"q": "What is the difference between computed properties and methods?", "a": "Computed properties are cached based on dependencies, methods are not."},
+    {"q": "What is the difference between props and data?", "a": "Props are passed from parent to child components, data is local to the component."},
+    {"q": "What is the difference between watchers and computed properties?", "a": "Watchers observe data changes and execute code, computed properties return values based on dependencies."},
+    {"q": "What is v-bind in Vue.js?", "a": "Directive to bind attributes or props to expressions."},
+    {"q": "What is v-model in Vue.js?", "a": "Two-way binding directive between input fields and data."},
+    {"q": "What is v-on in Vue.js?", "a": "Directive to attach event listeners to elements."},
+    {"q": "What is the difference between Vue 2 and Vue 3?", "a": "Vue 3 uses Composition API, better performance, smaller bundle size, and Proxy-based reactivity."},
+    {"q": "What is the difference between global and local components?", "a": "Global components can be used anywhere, local components are registered inside a component."},
+    {"q": "What is a mixin in Vue.js?", "a": "Reusable piece of code that can be included in multiple components."},
+    {"q": "What is the difference between key and ref?", "a": "key is used to track nodes for re-rendering, ref gives direct access to DOM or component instance."},
+    {"q": "What is the difference between Vue Router and Vuex?", "a": "Vue Router handles navigation between pages, Vuex handles state management."},
+    {"q": "What is scoped CSS in Vue.js?", "a": "CSS that applies only to the current component, not globally."},
+    {"q": "What is a dynamic component in Vue.js?", "a": "A component that can switch between different child components dynamically using <component> tag."},
+    {"q": "What is the difference between $emit and v-model?", "a": "$emit is used to send events from child to parent, v-model is two-way binding."},
+    {"q": "What is the difference between Vue.js and React?", "a": "Vue is template-based with options API, React is JSX and component-based with hooks."},
+    {"q": "What is reactivity in Vue.js?", "a": "System that tracks data changes and automatically updates the DOM."},
+    {"q": "What is the purpose of provide/inject in Vue.js?", "a": "Allow passing data from parent to deeply nested child components without prop drilling."},
+    {"q": "What is a single-file component (SFC)?", "a": "A component containing template, script, and style in a single .vue file."},
+    {"q": "What is the difference between v-pre and v-once?", "a": "v-pre skips compilation, v-once renders element only once and caches it."},
+    {"q": "What is a slot in Vue.js?", "a": "Placeholder for content passed from parent to child component."},
+    {"q": "What is the difference between default slot and named slot?", "a": "Default slot has no name, named slot allows multiple slots with unique names."},
+    {"q": "What is async component in Vue.js?", "a": "Component that is loaded lazily to reduce initial bundle size."},
+    {"q": "What is the difference between shallowMount and mount in Vue Test Utils?", "a": "shallowMount mounts component without rendering child components, mount renders everything."},
+    {"q": "What is watchEffect in Vue 3?", "a": "Reactive effect that automatically tracks dependencies and re-runs when they change."},
+    {"q": "What is Composition API?", "a": "Vue 3 API using setup() function to organize code by logic rather than options."},
+    {"q": "What is the difference between reactive and ref?", "a": "reactive creates reactive objects, ref creates reactive primitive values."},
+    {"q": "What is teleport in Vue.js?", "a": "Allows rendering a component in a different part of the DOM."},
+    {"q": "What is a directive hook?", "a": "Lifecycle hooks of a custom directive, e.g., bind, inserted, update, unbind."},
+    {"q": "What is keep-alive in Vue.js?", "a": "Component wrapper to cache inactive components to preserve state."},
+    {"q": "What is the difference between v-html and mustache syntax?", "a": "v-html renders raw HTML, mustache escapes HTML and renders text."},
+    {"q": "What is the purpose of nextTick?", "a": "Defers the callback until after the DOM has been updated."},
+    {"q": "What is the difference between shallowRef and ref in Vue 3?", "a": "shallowRef makes top-level object reactive, nested objects are not reactive."},
+    {"q": "What is a plugin in Vue.js?", "a": "Reusable library that adds global-level functionality to Vue applications."},
+    {"q": "What is dynamic props in Vue.js?", "a": "Props bound to expressions that can change dynamically."},
+    {"q": "What is the difference between v-for and v-if on the same element?", "a": "v-for has higher priority than v-if; v-if runs after v-for loop evaluation."},
+    {"q": "What is suspense in Vue 3?", "a": "Component to handle async component loading with fallback content."},
+    {"q": "What is the difference between watch and watchEffect?", "a": "watch tracks specific sources, watchEffect tracks reactive dependencies automatically."},
+    {"q": "What is the purpose of provide/inject vs props?", "a": "provide/inject avoids prop drilling for deeply nested components."},
+    {"q": "What is the difference between a computed setter and watcher?", "a": "Computed setter allows modifying reactive value, watcher reacts to changes to perform side effects."},
+    {"q": "What is a mixin vs composition API?", "a": "Mixin is a reusable object with options, composition API organizes logic functionally."},
+    {"q": "What is the difference between Vue 3 createApp and Vue 2 new Vue?", "a": "createApp creates a new app instance with methods like mount, Vue 2 uses constructor new Vue()."},
+    {"q": "What is the difference between functional component and stateful component?", "a": "Functional component is stateless, lightweight, and faster; stateful component maintains internal state."},
+    {"q": "What is the purpose of app.config.globalProperties?", "a": "Allows adding global properties/methods to be accessible in all components."},
+    {"q": "What is the difference between watch array and watch deep object?", "a": "Deep option allows watching nested object changes, array watch tracks array changes."},
+    {"q": "What is the purpose of v-cloak?", "a": "Directive to hide uncompiled template until Vue instance is mounted."}
   ],
   "HTML": [
-    {
-      "q": "What are semantic tags? (#1)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#2)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#3)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#4)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#5)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#6)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#7)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#8)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#9)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#10)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#11)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#12)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#13)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#14)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#15)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#16)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#17)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#18)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#19)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#20)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#21)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#22)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#23)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#24)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#25)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#26)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#27)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#28)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#29)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#30)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#31)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#32)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#33)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#34)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#35)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#36)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#37)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#38)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#39)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#40)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#41)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#42)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#43)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#44)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#45)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#46)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#47)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#48)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#49)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#50)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#51)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#52)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#53)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#54)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#55)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#56)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#57)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#58)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#59)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#60)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#61)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#62)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#63)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#64)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#65)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#66)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#67)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#68)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#69)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#70)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#71)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#72)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#73)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#74)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#75)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#76)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#77)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#78)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#79)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#80)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#81)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#82)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#83)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#84)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#85)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#86)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#87)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#88)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#89)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#90)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#91)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#92)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#93)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#94)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#95)",
-      "a": "id unique, class reusable."
-    },
-    {
-      "q": "What are semantic tags? (#96)",
-      "a": "Tags like <header>, <footer> giving meaning to content."
-    },
-    {
-      "q": "Difference between inline and block elements? (#97)",
-      "a": "Block takes full width, inline only needed width."
-    },
-    {
-      "q": "What is a meta tag? (#98)",
-      "a": "Provides metadata about HTML document."
-    },
-    {
-      "q": "What is a form element? (#99)",
-      "a": "Collects user input data."
-    },
-    {
-      "q": "What is the difference between id and class? (#100)",
-      "a": "id unique, class reusable."
-    }
+    {"q": "What is HTML?", "a": "HTML (HyperText Markup Language) is the standard language for creating web pages."},
+    {"q": "What are semantic HTML tags?", "a": "Tags like <header>, <footer>, <article>, <section> that give meaning to content."},
+    {"q": "Difference between inline and block elements?", "a": "Block elements take full width and start on a new line; inline elements take only necessary width and stay in line."},
+    {"q": "What is the difference between HTML5 and HTML4?", "a": "HTML5 introduced semantic elements, audio/video support, canvas, local storage, and new APIs."},
+    {"q": "What are meta tags?", "a": "Tags in <head> that provide metadata about the document, like description, keywords, and viewport."},
+    {"q": "What is the difference between id and class?", "a": "id is unique for one element, class can be used for multiple elements."},
+    {"q": "What is the purpose of the alt attribute in images?", "a": "Provides alternative text for images when they cannot be displayed or for accessibility."},
+    {"q": "What is the difference between <div> and <span>?", "a": "<div> is block-level, <span> is inline-level."},
+    {"q": "What is the difference between <section> and <article>?", "a": "<section> is a thematic grouping, <article> is self-contained content that can be distributed independently."},
+    {"q": "What is the difference between <strong> and <b>?", "a": "<strong> indicates importance, <b> is purely stylistic bold text."},
+    {"q": "What is the difference between <em> and <i>?", "a": "<em> indicates emphasis, <i> is purely stylistic italic text."},
+    {"q": "What is the difference between <ul>, <ol>, and <dl>?", "a": "<ul> is unordered list, <ol> is ordered list, <dl> is definition list."},
+    {"q": "What is the purpose of the <form> tag?", "a": "Used to collect user input and submit data to a server."},
+    {"q": "What is the difference between GET and POST methods in forms?", "a": "GET appends data in URL, POST sends data in the request body."},
+    {"q": "What is the difference between <input type='text'> and <textarea>?", "a": "<input> is single-line text input, <textarea> is multi-line input."},
+    {"q": "What is the difference between <button> and <input type='submit'>?", "a": "<button> can have content and styles, input type='submit' is limited and triggers form submission."},
+    {"q": "What is the difference between <link> and <style>?", "a": "<link> links external CSS, <style> contains internal CSS in the HTML document."},
+    {"q": "What is the difference between <script src> and inline <script>?", "a": "<script src> loads external JavaScript, inline <script> contains JS inside the HTML."},
+    {"q": "What are data-* attributes?", "a": "Custom attributes that store data private to the page or application."},
+    {"q": "What is the difference between <iframe> and <embed>?", "a": "<iframe> embeds another HTML document, <embed> embeds multimedia content like PDF or video."},
+    {"q": "What is the difference between <header> and <nav>?", "a": "<header> contains introductory content, <nav> contains navigation links."},
+    {"q": "What is the difference between <footer> and <address>?", "a": "<footer> is general footer of a page, <address> provides contact information."},
+    {"q": "What is the difference between <bdo> and <span>?", "a": "<bdo> overrides text direction, <span> is general inline container."},
+    {"q": "What is the difference between <cite> and <q>?", "a": "<cite> represents a reference to a work, <q> represents a short inline quotation."},
+    {"q": "What is the difference between <figure> and <figcaption>?", "a": "<figure> is a container for media, <figcaption> provides caption for <figure> content."},
+    {"q": "What is the difference between <small> and <sub>/<sup>?", "a": "<small> reduces font size, <sub>/<sup> formats text as subscript or superscript."},
+    {"q": "What is the difference between <main> and <section>?", "a": "<main> indicates main content, <section> is a thematic grouping of content."},
+    {"q": "What is the difference between <mark> and <span>?", "a": "<mark> highlights text semantically, <span> is generic inline container."},
+    {"q": "What is the difference between <del> and <s>?", "a": "<del> indicates deleted text, <s> is purely stylistic strike-through."},
+    {"q": "What is the difference between <ins> and <u>?", "a": "<ins> indicates inserted text, <u> is purely stylistic underline."},
+    {"q": "What is the difference between <time> and <date>?", "a": "<time> represents time or date, <date> is obsolete in HTML5."},
+    {"q": "What is the difference between <audio> and <video>?", "a": "<audio> plays sound, <video> plays video with optional sound."},
+    {"q": "What is the difference between preload, autoplay, and controls attributes in media?", "a": "preload loads media in advance, autoplay plays automatically, controls show playback UI."},
+    {"q": "What is the difference between <canvas> and <svg>?", "a": "<canvas> is bitmap-based drawing, <svg> is vector-based graphics."},
+    {"q": "What is the difference between <meta charset> and <meta name='viewport'>?", "a": "charset defines character encoding, viewport defines layout on different devices."},
+    {"q": "What is the difference between <base> and <link>?", "a": "<base> sets default URL for relative links, <link> references external resources."},
+    {"q": "What is the difference between <object> and <embed>?", "a": "<object> can contain fallback content, <embed> is self-contained."},
+    {"q": "What is the difference between <details> and <summary>?", "a": "<details> creates collapsible content, <summary> provides a title for it."},
+    {"q": "What is the difference between <dl>, <dt>, and <dd>?", "a": "<dl> is a definition list, <dt> is term, <dd> is definition."},
+    {"q": "What is the difference between <abbr> and <acronym>?", "a": "<abbr> defines abbreviation, <acronym> is obsolete in HTML5."},
+    {"q": "What is the difference between <meta http-equiv> and <meta name>?", "a": "http-equiv simulates HTTP headers, name defines metadata properties."},
+    {"q": "What is the difference between <progress> and <meter>?", "a": "<progress> shows task completion, <meter> shows a scalar measurement within range."},
+    {"q": "What is the difference between <template> and <slot>?", "a": "<template> defines inert HTML for reuse, <slot> is placeholder for child content in components."},
+    {"q": "What is the difference between <link rel='stylesheet'> and <style>?", "a": "link loads external CSS, style contains inline CSS."},
+    {"q": "What is the difference between HTML attribute and property?", "a": "Attribute is defined in markup, property is DOM object representation of the attribute."},
+    {"q": "What is the difference between <nav> and <menu>?", "a": "<nav> is for navigation links, <menu> is for context menus or list of commands."},
+    {"q": "What is the difference between <blockquote> and <q>?", "a": "<blockquote> for block quotes, <q> for inline quotes."},
+    {"q": "What is the difference between HTML and XHTML?", "a": "XHTML is stricter XML-based markup, HTML is less strict and forgiving."},
+    {"q": "What is the difference between <form> action='' and method='get/post'?", "a": "action specifies URL for form submission, method specifies HTTP request type."}
   ],
-  "CSS": [
-    {
-      "q": "What is Flexbox? (#1)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#2)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#3)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#4)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#5)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#6)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#7)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#8)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#9)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#10)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#11)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#12)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#13)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#14)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#15)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#16)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#17)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#18)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#19)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#20)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#21)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#22)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#23)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#24)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#25)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#26)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#27)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#28)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#29)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#30)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#31)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#32)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#33)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#34)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#35)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#36)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#37)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#38)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#39)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#40)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#41)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#42)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#43)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#44)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#45)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#46)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#47)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#48)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#49)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#50)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#51)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#52)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#53)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#54)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#55)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#56)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#57)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#58)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#59)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#60)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#61)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#62)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#63)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#64)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#65)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#66)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#67)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#68)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#69)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#70)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#71)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#72)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#73)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#74)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#75)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#76)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#77)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#78)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#79)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#80)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#81)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#82)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#83)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#84)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#85)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#86)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#87)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#88)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#89)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#90)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#91)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#92)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#93)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#94)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#95)",
-      "a": "Apply styles based on device properties."
-    },
-    {
-      "q": "What is Flexbox? (#96)",
-      "a": "One-dimensional layout for arranging items."
-    },
-    {
-      "q": "What is Grid? (#97)",
-      "a": "Two-dimensional layout system."
-    },
-    {
-      "q": "Difference between relative, absolute, fixed? (#98)",
-      "a": "Relative moves itself, absolute to parent, fixed to viewport."
-    },
-    {
-      "q": "What is pseudo-class? (#99)",
-      "a": "Selectors to style specific states like :hover."
-    },
-    {
-      "q": "What is media query? (#100)",
-      "a": "Apply styles based on device properties."
-    }
+  "CSS":[
+    {"q": "What is CSS?", "a": "CSS (Cascading Style Sheets) is used to style HTML elements on a web page."},
+    {"q": "What is SCSS?", "a": "SCSS is a syntax of SASS, a CSS preprocessor that adds features like variables, nesting, and mixins."},
+    {"q": "Difference between relative, absolute, fixed, and sticky positioning?", "a": "Relative: relative to itself; Absolute: relative to nearest positioned ancestor; Fixed: relative to viewport; Sticky: toggles between relative and fixed based on scroll."},
+    {"q": "What is the difference between inline, inline-block, and block elements?", "a": "Inline: flows with text, width/height ignored; Inline-block: flows inline but allows width/height; Block: starts on new line, takes full width."},
+    {"q": "What is the difference between ID and class selectors?", "a": "ID is unique, prefixed with #; class can be reused, prefixed with ."},
+    {"q": "What is the difference between relative and absolute units in CSS?", "a": "Relative units (%) depend on parent, viewport; Absolute units (px, cm) are fixed."},
+    {"q": "What is the difference between em, rem, and px?", "a": "em is relative to parent font-size, rem is relative to root font-size, px is fixed pixels."},
+    {"q": "What is the difference between inline style and external stylesheet?", "a": "Inline styles are inside HTML elements; external stylesheets are separate CSS files linked via <link>."},
+    {"q": "What is the difference between relative, absolute, fixed, and sticky position?", "a": "Same as above; relative: moves relative to self, absolute: relative to nearest positioned ancestor, fixed: viewport, sticky: scroll-based toggle."},
+    {"q": "What is the difference between float and flex?", "a": "Float is for wrapping text/images; flex is a modern layout system for arranging items in a container."},
+    {"q": "What is the difference between inline styles and classes?", "a": "Inline styles apply only to one element; classes can style multiple elements."},
+    {"q": "What is the difference between z-index and stacking context?", "a": "z-index sets element order in stacking context; stacking context is created by positioned elements and controls z-index behavior."},
+    {"q": "What is the difference between relative and absolute positioning?", "a": "Relative moves element relative to itself; absolute positions element relative to nearest positioned ancestor."},
+    {"q": "What is the difference between CSS Grid and Flexbox?", "a": "Grid is for two-dimensional layouts (rows and columns); Flexbox is for one-dimensional layouts (row or column)."},
+    {"q": "What is the difference between visibility:hidden and display:none?", "a": "visibility:hidden hides element but occupies space; display:none removes element from layout."},
+    {"q": "What is the difference between min-width, max-width, and width?", "a": "width sets fixed size, min-width sets minimum size, max-width sets maximum size."},
+    {"q": "What is the difference between relative and absolute length units?", "a": "Relative units depend on context (%, em, rem), absolute units are fixed (px, cm)."},
+    {"q": "What is the difference between position:relative and float?", "a": "Relative moves element in normal flow; float removes element partially from normal flow for wrapping."},
+    {"q": "What is the difference between pseudo-class and pseudo-element?", "a": "Pseudo-class (:hover) selects element state; pseudo-element (::before) selects part of element content."},
+    {"q": "What is the difference between inline, block, and inline-block?", "a": "Block: new line, full width; Inline: flows inline; Inline-block: inline but accepts width/height."},
+    {"q": "What is the difference between rem and em?", "a": "rem is relative to root font-size, em is relative to parent font-size."},
+    {"q": "What is the difference between relative and absolute positioning?", "a": "Relative moves element from its normal position; absolute positions element relative to nearest positioned ancestor."},
+    {"q": "What is the difference between SCSS and SASS?", "a": "SCSS uses CSS-like syntax with braces and semicolons; SASS uses indentation-based syntax."},
+    {"q": "What is the difference between import and @import in SCSS?", "a": "Import is modern ES6 style; @import in SCSS imports another SCSS file for compilation."},
+    {"q": "What are mixins in SCSS?", "a": "Reusable blocks of code that can be included in other selectors with parameters."},
+    {"q": "What are variables in SCSS?", "a": "Variables store values like colors, fonts, or sizes for reuse across stylesheets."},
+    {"q": "What is the difference between nesting and BEM?", "a": "Nesting organizes selectors hierarchically; BEM is a naming convention for readability and maintainability."},
+    {"q": "What is the difference between extend and mixin in SCSS?", "a": "Extend shares styles via inheritance; mixin includes reusable block of code with optional parameters."},
+    {"q": "What is the difference between pseudo-class and pseudo-element?", "a": "Pseudo-class (:hover) targets state; pseudo-element (::before) targets part of element."},
+    {"q": "What is the difference between transition and animation?", "a": "Transition handles state changes over time; animation defines multiple keyframes for complex animations."},
+    {"q": "What is the difference between keyframes and transitions?", "a": "Keyframes define multiple stages for animations; transitions define change from one state to another."},
+    {"q": "What is the difference between relative, fixed, sticky, and absolute?", "a": "Relative: relative to itself; absolute: relative to positioned ancestor; fixed: viewport; sticky: toggles relative/fixed."},
+    {"q": "What is the difference between opacity and visibility?", "a": "Opacity makes element semi-transparent but still interactive; visibility:hidden hides element but occupies space."},
+    {"q": "What is the difference between inline, inline-block, and block?", "a": "Inline: flows with text; Inline-block: inline with width/height; Block: new line full-width."},
+    {"q": "What is the difference between SCSS variables and CSS variables?", "a": "SCSS variables are compiled at build time; CSS variables are live in browser and can be updated dynamically."},
+    {"q": "What is the difference between position sticky and fixed?", "a": "Sticky toggles between relative and fixed based on scroll; fixed is always relative to viewport."},
+    {"q": "What is the difference between absolute and fixed position?", "a": "Absolute: relative to nearest positioned ancestor; Fixed: relative to viewport."},
+    {"q": "What is the difference between flex-start, flex-end, center, space-between, space-around in Flexbox?", "a": "Aligns items along main axis: start, end, center, evenly spaced, or spaced around."},
+    {"q": "What is the difference between align-items and align-content?", "a": "align-items aligns items on cross-axis; align-content aligns multiple lines of flex items."},
+    {"q": "What is the difference between justify-content and align-items?", "a": "justify-content aligns items on main axis; align-items aligns items on cross-axis."},
+    {"q": "What is the difference between grid-template-columns and grid-template-rows?", "a": "Defines number and size of columns vs rows in CSS Grid layout."},
+    {"q": "What is the difference between auto-fill and auto-fit in CSS Grid?", "a": "auto-fill fills row/column with as many tracks as possible; auto-fit stretches tracks to fill space."},
+    {"q": "What is the difference between @mixin and @function in SCSS?", "a": "Mixin inserts reusable styles; function returns a value to use in styles."},
+    {"q": "What is the difference between SCSS partial and normal SCSS file?", "a": "Partial files start with _ and are not compiled separately; normal SCSS files are compiled to CSS."},
+    {"q": "What is the difference between z-index and stacking context?", "a": "z-index sets order within stacking context; stacking context determines hierarchy of elements."},
+    {"q": "What is the difference between CSS variables and SCSS variables?", "a": "CSS variables are runtime, dynamic; SCSS variables are compile-time, static."},
+    {"q": "What is the difference between relative and absolute units?", "a": "Relative units depend on context (%/em/rem), absolute units are fixed (px/cm/in)."},
+    {"q": "What is the difference between rem and em units?", "a": "rem is relative to root font-size, em is relative to parent font-size."},
+    {"q": "What is the difference between CSS Grid and Flexbox?", "a": "Grid is two-dimensional layout (rows+columns), Flexbox is one-dimensional layout (row or column)."},
+    {"q": "What is the difference between transition and animation?", "a": "Transition is triggered by state change; animation is defined using keyframes for multiple steps."}
   ],
   "NestJS": [
-    {
-      "q": "What is a module? (#1)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#2)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#3)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#4)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#5)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#6)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#7)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#8)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#9)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#10)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#11)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#12)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#13)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#14)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#15)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#16)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#17)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#18)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#19)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#20)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#21)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#22)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#23)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#24)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#25)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#26)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#27)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#28)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#29)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#30)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#31)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#32)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#33)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#34)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#35)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#36)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#37)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#38)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#39)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#40)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#41)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#42)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#43)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#44)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#45)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#46)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#47)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#48)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#49)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#50)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#51)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#52)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#53)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#54)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#55)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#56)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#57)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#58)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#59)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#60)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#61)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#62)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#63)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#64)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#65)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#66)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#67)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#68)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#69)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#70)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#71)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#72)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#73)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#74)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#75)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#76)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#77)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#78)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#79)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#80)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#81)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#82)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#83)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#84)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#85)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#86)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#87)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#88)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#89)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#90)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#91)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#92)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#93)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#94)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#95)",
-      "a": "Technique to provide dependencies to classes."
-    },
-    {
-      "q": "What is a module? (#96)",
-      "a": "Class annotated with @Module organizing app structure."
-    },
-    {
-      "q": "What are providers? (#97)",
-      "a": "Services/classes injectable via dependency injection."
-    },
-    {
-      "q": "What is a controller? (#98)",
-      "a": "Handles incoming requests and responses."
-    },
-    {
-      "q": "What is middleware? (#99)",
-      "a": "Function executed before request reaches controller."
-    },
-    {
-      "q": "What is dependency injection? (#100)",
-      "a": "Technique to provide dependencies to classes."
-    }
+    {"q": "What is NestJS?", "a": "NestJS is a progressive Node.js framework for building efficient, reliable, and scalable server-side applications."},
+    {"q": "What is a module in NestJS?", "a": "A module is a class annotated with @Module decorator that organizes the application structure."},
+    {"q": "What are controllers in NestJS?", "a": "Controllers handle incoming HTTP requests and return responses to the client."},
+    {"q": "What are providers in NestJS?", "a": "Providers are services or classes that can be injected using dependency injection."},
+    {"q": "What is dependency injection in NestJS?", "a": "A design pattern that allows a class to receive dependencies from external sources rather than creating them."},
+    {"q": "What is the difference between @Injectable() and @Controller()?", "a": "@Injectable() marks a class as a provider; @Controller() marks a class as a controller handling routes."},
+    {"q": "What is middleware in NestJS?", "a": "Functions that are executed before the route handler, useful for logging, authentication, etc."},
+    {"q": "What is the difference between middleware and interceptor?", "a": "Middleware runs before route handlers; interceptors can manipulate requests/responses and run before or after handlers."},
+    {"q": "What is an interceptor in NestJS?", "a": "Class annotated with @Injectable() that implements NestInterceptor to bind extra logic to request/response lifecycle."},
+    {"q": "What is a pipe in NestJS?", "a": "A class annotated with @Injectable() that implements transformation and validation logic for incoming data."},
+    {"q": "What is a guard in NestJS?", "a": "A class implementing CanActivate interface that determines whether a request is allowed to proceed."},
+    {"q": "What is the difference between @Get(), @Post(), @Put(), @Delete() decorators?", "a": "They map HTTP methods GET, POST, PUT, DELETE to controller route handlers."},
+    {"q": "What is the difference between synchronous and asynchronous providers?", "a": "Synchronous providers return immediately; asynchronous providers use async/await or Promises."},
+    {"q": "What is the difference between forRoot() and forFeature() in NestJS modules?", "a": "forRoot() configures global module providers; forFeature() registers module-specific providers."},
+    {"q": "What is the difference between forwardRef() and normal imports?", "a": "forwardRef() resolves circular dependencies between modules or providers."},
+    {"q": "What is the difference between @Body(), @Param(), and @Query()?", "a": "@Body() gets data from request body, @Param() gets route parameters, @Query() gets query parameters."},
+    {"q": "What is the difference between class-validator and class-transformer?", "a": "class-validator validates object properties; class-transformer transforms plain objects to class instances."},
+    {"q": "What is the difference between synchronous and asynchronous pipes?", "a": "Synchronous pipes execute instantly; asynchronous pipes return Promises or Observables."},
+    {"q": "What is the difference between HTTP exception and standard exception?", "a": "HTTP exception sends formatted HTTP error responses; standard exception is general JavaScript error."},
+    {"q": "What is the difference between @Req() and @Request()?", "a": "Both inject request object; @Req() is alias commonly used for readability."},
+    {"q": "What is the difference between @Res() and return statement?", "a": "@Res() gives full control over response object; returning a value lets Nest handle response automatically."},
+    {"q": "What is the difference between synchronous and asynchronous guards?", "a": "Synchronous guards return boolean; asynchronous guards return Promise<boolean> or Observable<boolean>."},
+    {"q": "What is the difference between interceptors and middleware?", "a": "Interceptors can modify responses and exceptions; middleware only runs before route handlers."},
+    {"q": "What is the difference between global and scoped providers?", "a": "Global providers are available app-wide; scoped providers are limited to a specific request or module."},
+    {"q": "What is the difference between singleton and transient providers?", "a": "Singleton: one instance per app; transient: new instance per injection."},
+    {"q": "What is the difference between synchronous and asynchronous module initialization?", "a": "Synchronous initialization runs immediately; asynchronous allows async configuration before module is ready."},
+    {"q": "What is the difference between @Inject() and constructor injection?", "a": "@Inject() explicitly specifies a provider token; constructor injection lets Nest resolve dependencies automatically."},
+    {"q": "What is the difference between Monolithic and Microservice architecture in NestJS?", "a": "Monolithic runs as a single app; microservices run as multiple independent services communicating over network."},
+    {"q": "What is the difference between TCP, gRPC, and RabbitMQ in NestJS?", "a": "TCP and gRPC are transport layers for microservices; RabbitMQ is a message broker for async messaging."},
+    {"q": "What is the difference between @Injectable() and @Global()?", "a": "@Injectable() registers provider; @Global() makes module providers available globally without import."},
+    {"q": "What is the difference between synchronous and asynchronous event listeners?", "a": "Synchronous listeners execute immediately; asynchronous listeners execute in event loop without blocking."},
+    {"q": "What is the difference between @UseGuards() and app.useGlobalGuards()?", "a": "UseGuards applies guards at controller/route level; useGlobalGuards applies guards globally to all routes."},
+    {"q": "What is the difference between @UseInterceptors() and app.useGlobalInterceptors()?", "a": "UseInterceptors applies interceptors at route/controller; useGlobalInterceptors applies globally."},
+    {"q": "What is the difference between @Catch() and try/catch?", "a": "@Catch() handles exceptions centrally via Exception Filters; try/catch handles locally."},
+    {"q": "What is the difference between Exception Filters and Pipes?", "a": "Filters handle errors; pipes handle validation and transformation."},
+    {"q": "What is the difference between @InjectRepository() and TypeORM repository?", "a": "InjectRepository injects repository for a specific entity; TypeORM repository is general repository instance."},
+    {"q": "What is the difference between NestJS and Express?", "a": "NestJS is a structured framework built on top of Express with dependency injection, modules, and decorators."},
+    {"q": "What is the difference between @UsePipes() and app.useGlobalPipes()?", "a": "UsePipes applies to controller/route; useGlobalPipes applies to all requests globally."},
+    {"q": "What is the difference between async/await and Observables in NestJS?", "a": "async/await handles Promises; Observables provide streams of data with reactive operators."},
+    {"q": "What is the difference between @MessagePattern() and @EventPattern()?", "a": "MessagePattern handles request-response messages; EventPattern handles one-way event messages."},
+    {"q": "What is the difference between NestJS CLI and manual setup?", "a": "CLI scaffolds project structure quickly; manual setup requires configuring modules and dependencies manually."},
+    {"q": "What is the difference between forwardRef() and circular dependencies?", "a": "forwardRef() resolves circular dependencies; circular dependencies occur when two providers import each other."},
+    {"q": "What is the difference between synchronous and asynchronous microservices?", "a": "Synchronous microservices wait for response; asynchronous communicate via events/messages."},
+    {"q": "What is the difference between request-scoped and singleton-scoped providers?", "a": "Request-scoped creates new instance per request; singleton-scoped creates one instance for the app lifetime."},
+    {"q": "What is the difference between HTTPModule and Axios in NestJS?", "a": "HTTPModule wraps Axios for dependency injection; Axios can be used standalone for HTTP requests."},
+    {"q": "What is the difference between NestJS Lifecycle hooks and Angular lifecycle hooks?", "a": "Similar hooks for initialization and destruction; Angular is client-side, NestJS is server-side."},
+    {"q": "What is the difference between NestFactory.create() and NestFactory.createMicroservice()?", "a": "create() starts an HTTP server; createMicroservice() starts a microservice transport layer."},
+    {"q": "What is the difference between global filters, guards, pipes, and interceptors?", "a": "They apply globally for exceptions, authorization, validation, and request/response manipulation respectively."},
+    {"q": "What is the difference between NestJS WebSockets and microservice transport?", "a": "WebSockets provide real-time bidirectional communication; microservice transport is for distributed service communication."},
+    {"q": "What is the difference between @SetMetadata() and Reflector in NestJS?", "a": "@SetMetadata sets custom metadata on controllers/routes; Reflector retrieves metadata at runtime."}
   ],
   "Programs": [
     {
