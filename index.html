@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dynamic Interview Q&A</title>
+  <style>
+    body {font-family: Arial, sans-serif; background:#f4f6fa; margin:0; padding:20px;}
+    .container {max-width:900px; margin:auto;}
+    h1 {text-align:center; margin-bottom:20px;}
+    .module {margin-bottom:15px; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .module-title {background:#333; color:#fff; padding:12px 15px; margin:0; cursor:pointer; user-select:none;}
+    .search-box {margin:0; padding:8px 12px; width:100%; box-sizing:border-box; border:none; border-bottom:1px solid #ccc; outline:none;}
+    .qa-container {display:none; background:#fff; padding:10px;}
+    .qa-item {margin:8px 0; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.1); cursor:pointer;}
+    .question {font-weight:bold;}
+    .answer {max-height:0; overflow:hidden; transition:max-height 0.3s ease, opacity 0.3s ease; opacity:0; margin-top:8px;}
+    .qa-item.active .answer {max-height:400px; opacity:1;}
+    .module.active .qa-container {display:block;}
+    .highlight {background:yellow;}
+    .no-results {color:#999; font-style:italic; padding:8px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Interview Q&A by Module</h1>
+    <div id="modules"></div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const JSON_URL = 'https://raw.githubusercontent.com/prasadnalawade94/tech-interview-notes/main/assets/data.json';
+
+  async function loadModules() {
+    try {
+      const response = await axios.get(JSON_URL);
+      const qaModules = response.data; // axios automatically parses JSON
+      const modulesDiv = document.getElementById('modules');
+
+      Object.entries(qaModules).forEach(([module, qas]) => {
+        const section = document.createElement('div');
+        section.className = 'module';
+        section.innerHTML = `<h2 class="module-title">${module}</h2>`;
+
+        // Search box directly after module title
+        const searchBox = document.createElement('input');
+        searchBox.className = 'search-box';
+        searchBox.placeholder = `Search questions in ${module}...`;
+        section.appendChild(searchBox);
+
+        const qaContainer = document.createElement('div');
+        qaContainer.className = 'qa-container';
+
+        const questionsContainer = document.createElement('div');
+        qas.forEach((item, idx) => {
+          const qaDiv = document.createElement('div');
+          qaDiv.className = 'qa-item';
+          qaDiv.innerHTML = `<div class='question'>${idx+1}. ${item.q}</div><div class='answer'>${item.a}</div>`;
+          questionsContainer.appendChild(qaDiv);
+        });
+
+        qaContainer.appendChild(questionsContainer);
+        section.appendChild(qaContainer);
+        modulesDiv.appendChild(section);
+
+        // Search + highlight + auto open module
+        searchBox.addEventListener('input', (e) => {
+          const searchValue = e.target.value.toLowerCase();
+          let anyVisible = false;
+
+          if(searchValue.trim() !== ''){
+            section.classList.add('active');
+            document.querySelectorAll('.module.active').forEach(mod => {
+              if(mod !== section) mod.classList.remove('active');
+            });
+          }
+
+          questionsContainer.querySelectorAll('.qa-item').forEach(qa => {
+            const questionDiv = qa.querySelector('.question');
+            const text = questionDiv.textContent;
+
+            if(text.toLowerCase().includes(searchValue)){
+              qa.style.display = 'block';
+              anyVisible = true;
+              const regex = new RegExp(`(${searchValue})`, 'gi');
+              questionDiv.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
+            } else {
+              qa.style.display = 'none';
+              questionDiv.innerHTML = text;
+            }
+          });
+
+          let noResults = section.querySelector('.no-results');
+          if(!anyVisible){
+            if(!noResults){
+              noResults = document.createElement('div');
+              noResults.className = 'no-results';
+              noResults.textContent = 'No matching questions found.';
+              qaContainer.appendChild(noResults);
+            }
+          } else {
+            if(noResults) noResults.remove();
+          }
+        });
+      });
+
+      // Accordion behavior
+      modulesDiv.addEventListener('click', (e) => {
+        const moduleTitle = e.target.closest('.module-title');
+        if(moduleTitle){
+          const currentModule = moduleTitle.parentElement;
+          document.querySelectorAll('.module.active').forEach(mod => {
+            if(mod !== currentModule) mod.classList.remove('active');
+          });
+          currentModule.classList.toggle('active');
+          return;
+        }
+
+        const item = e.target.closest('.qa-item');
+        if(!item) return;
+        const qaContainer = item.parentElement;
+
+        qaContainer.querySelectorAll('.qa-item.active').forEach(el => {
+          if(el !== item) el.classList.remove('active');
+        });
+
+        item.classList.toggle('active');
+      });
+
+    } catch (err) {
+      console.error('Error loading JSON:', err);
+    }
+  }
+
+  loadModules();
+</script>
+
+</body>
+</html>
