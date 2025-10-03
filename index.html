@@ -1,139 +1,177 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dynamic Interview Q&A</title>
-  <style>
-    body {font-family: Arial, sans-serif; background:#f4f6fa; margin:0; padding:20px;}
-    .container {max-width:900px; margin:auto;}
-    h1 {text-align:center; margin-bottom:20px;}
-    .module {margin-bottom:15px; border-radius:6px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
-    .module-title {background:#333; color:#fff; padding:12px 15px; margin:0; cursor:pointer; user-select:none;}
-    .search-box {margin:0; padding:8px 12px; width:100%; box-sizing:border-box; border:none; border-bottom:1px solid #ccc; outline:none;}
-    .qa-container {display:none; background:#fff; padding:10px;}
-    .qa-item {margin:8px 0; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.1); cursor:pointer;}
-    .question {font-weight:bold;}
-    .answer {max-height:0; overflow:hidden; transition:max-height 0.3s ease, opacity 0.3s ease; opacity:0; margin-top:8px;}
-    .qa-item.active .answer {max-height:400px; opacity:1;}
-    .module.active .qa-container {display:block;}
-    .highlight {background:yellow;}
-    .no-results {color:#999; font-style:italic; padding:8px;}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dynamic Interview Q&A</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary-color: #39393d;
+  --primary-dark: #4f46e5;
+  --accent-color: #10b981;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+}
+
+*{box-sizing:border-box;}
+body{
+  font-family:'Inter',sans-serif;
+  background: linear-gradient(135deg, #9da1b4 0%, #764ba2 100%);
+  margin:0;padding:1rem;color:var(--text-primary);line-height:1.5;
+}
+.container{max-width:1200px;margin:0 auto;padding:0;}
+.header{
+  text-align:center;
+  margin-bottom:1.5rem;
+  background:rgba(255,255,255,0.95);
+  backdrop-filter:blur(10px);
+  padding:1.5rem;
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-lg);
+  border:1px solid rgba(255,255,255,0.2);
+}
+.header h1{
+  margin:0 0 0.5rem 0;
+  font-size:clamp(1.75rem,4vw,2.5rem);
+  font-weight:700;
+  background:linear-gradient(135deg,var(--primary-color),var(--accent-color));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.header p{color:var(--text-secondary);font-size:1.05rem;margin:0;font-weight:400;}
+
+.loading{text-align:center;padding:2rem;color:var(--text-secondary);font-size:1rem;}
+.spinner{display:inline-block;width:1.8rem;height:1.8rem;border:3px solid var(--border-color);border-radius:50%;border-top-color:var(--primary-color);animation:spin 1s linear infinite;margin-right:0.5rem;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.error{background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:0.75rem;border-radius:var(--radius-md);text-align:center;margin:0.75rem 0;}
+
+.module{margin-bottom:1rem;background:rgba(255,255,255,0.95);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1px solid rgba(255,255,255,0.2);transition:all 0.3s;}
+.module:hover{transform:translateY(-2px);box-shadow:0 20px 25px -5px rgba(0,0,0,0.1);}
+
+.module-header{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;background:linear-gradient(135deg,var(--primary-color),var(--primary-dark));color:#fff;font-weight:600;font-size:1rem;cursor:pointer;border-radius:var(--radius-md);}
+.module-title{display:flex;align-items:center;gap:0.5rem;}
+.chevron{transition:transform 0.3s;font-size:1.2rem;}
+.module.active .chevron{transform:rotate(180deg);}
+
+.search-box-inline{padding:0.35rem 0.5rem;font-size:0.85rem;border-radius:var(--radius-md);border:none;outline:none;color:#1e293b;background:#fff;}
+
+.qa-container{display:none;padding:1rem;background:rgba(248,250,252,0.8);}
+.module.active .qa-container{display:block;animation:slideDown 0.3s ease;}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px);}to{opacity:1;transform:translateY(0);}}
+
+.qa-item{margin:0.5rem 0;padding:1rem;background:#fff;box-shadow:var(--shadow-sm);border:1px solid var(--border-color);border-radius:var(--radius-md);cursor:pointer;position:relative;overflow:hidden;transition:all 0.3s;}
+.qa-item::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--primary-color);transform:scaleY(0);transition:transform 0.3s;}
+.qa-item:hover{transform:translateX(3px);box-shadow:var(--shadow-md);border-color:var(--primary-color);}
+.qa-item:hover::before{transform:scaleY(1);}
+.qa-item.active{background:rgba(99,102,241,0.05);border-color:var(--primary-color);}
+.qa-item.active::before{transform:scaleY(1);}
+
+.question{font-weight:600;margin-bottom:0.3rem;font-size:0.95rem;color:var(--text-primary);}
+.answer{max-height:0;overflow:hidden;opacity:0;transition:all 0.3s;color:var(--text-secondary);font-size:0.9rem;line-height:1.5;}
+.qa-item.active .answer{max-height:1000px;opacity:1;margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);}
+.highlight{background:linear-gradient(135deg,#fef3c7,#fde68a);padding:0.1rem 0.2rem;border-radius:var(--radius-md);font-weight:600;color:#92400e;}
+.no-results{color:var(--text-muted);font-style:italic;padding:1rem;text-align:center;background:rgba(248,250,252,0.8);border-radius:var(--radius-md);border:2px dashed var(--border-color);}
+.no-results::before{content:'🔍';display:block;font-size:1.5rem;margin-bottom:0.25rem;}
+
+@media(max-width:768px){.module-header{align-items:flex-start;gap:0.5rem;}.search-box-inline{width:100%;}}
+@media(prefers-color-scheme:dark){
+  :root{--text-primary:#f1f5f9;--text-secondary:#cbd5e1;--text-muted:#64748b;--border-color:#334155;}
+  body{background:linear-gradient(135deg,#1e293b 0%,#334155 100%);}
+  .header{background:rgba(30,41,59,0.95);}
+  .module{background:rgba(30,41,59,0.95);}
+  .qa-container{background:rgba(15,23,42,0.8);}
+  .qa-item{background:rgba(51,65,85,0.8);}
+  .search-box-inline{background:#1e293b;color:#f1f5f9;}
+}
+</style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
+  <div class="header">
     <h1>Interview Q&A by Module</h1>
-    <div id="modules"></div>
+    <p>Explore comprehensive interview questions organized by topics</p>
   </div>
+  <div id="loading" class="loading"><div class="spinner"></div>Loading interview questions...</div>
+  <div id="error" class="error" style="display:none;">Failed to load interview questions.</div>
+  <div id="modules"></div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
-  const JSON_URL = 'https://raw.githubusercontent.com/prasadnalawade94/tech-interview-notes/main/assets/data.json';
+const JSON_URL='https://raw.githubusercontent.com/prasadnalawade94/tech-interview-notes/main/assets/data.json';
+function showLoading(){document.getElementById('loading').style.display='block';document.getElementById('error').style.display='none';document.getElementById('modules').style.display='none';}
+function hideLoading(){document.getElementById('loading').style.display='none';}
+function showError(){document.getElementById('error').style.display='block';document.getElementById('modules').style.display='none';}
+function showModules(){document.getElementById('modules').style.display='block';}
+function debounce(func,wait){let timeout;return function(...args){clearTimeout(timeout);timeout=setTimeout(()=>func(...args),wait);};}
 
-  async function loadModules() {
-    try {
-      const response = await axios.get(JSON_URL);
-      const qaModules = response.data; // axios automatically parses JSON
-      const modulesDiv = document.getElementById('modules');
+async function loadModules(){
+  showLoading();
+  try{
+    const response=await axios.get(JSON_URL);
+    const qaModules=response.data;
+    const modulesDiv=document.getElementById('modules');
+    hideLoading();
+    showModules();
 
-      Object.entries(qaModules).forEach(([module, qas]) => {
-        const section = document.createElement('div');
-        section.className = 'module';
-        section.innerHTML = `<h2 class="module-title">${module}</h2>`;
+    Object.entries(qaModules).forEach(([module,qas])=>{
+      const section=document.createElement('div');section.className='module';
+      section.innerHTML=`
+        <div class="module-header" tabindex="0" aria-expanded="false">
+          <div class="module-title">
+            <span>${module}</span>
+            <span class="chevron">▼</span>
+          </div>
+          <input type="text" class="search-box-inline" placeholder="Search..." aria-label="Search in ${module}">
+        </div>
+      `;
+      const qaContainer=document.createElement('div');qaContainer.className='qa-container';
+      const questionsContainer=document.createElement('div');questionsContainer.setAttribute('role','list');
 
-        // Search box directly after module title
-        const searchBox = document.createElement('input');
-        searchBox.className = 'search-box';
-        searchBox.placeholder = `Search questions in ${module}...`;
-        section.appendChild(searchBox);
-
-        const qaContainer = document.createElement('div');
-        qaContainer.className = 'qa-container';
-
-        const questionsContainer = document.createElement('div');
-        qas.forEach((item, idx) => {
-          const qaDiv = document.createElement('div');
-          qaDiv.className = 'qa-item';
-          qaDiv.innerHTML = `<div class='question'>${idx+1}. ${item.q}</div><div class='answer'>${item.a}</div>`;
-          questionsContainer.appendChild(qaDiv);
-        });
-
-        qaContainer.appendChild(questionsContainer);
-        section.appendChild(qaContainer);
-        modulesDiv.appendChild(section);
-
-        // Search + highlight + auto open module
-        searchBox.addEventListener('input', (e) => {
-          const searchValue = e.target.value.toLowerCase();
-          let anyVisible = false;
-
-          if(searchValue.trim() !== ''){
-            section.classList.add('active');
-            document.querySelectorAll('.module.active').forEach(mod => {
-              if(mod !== section) mod.classList.remove('active');
-            });
-          }
-
-          questionsContainer.querySelectorAll('.qa-item').forEach(qa => {
-            const questionDiv = qa.querySelector('.question');
-            const text = questionDiv.textContent;
-
-            if(text.toLowerCase().includes(searchValue)){
-              qa.style.display = 'block';
-              anyVisible = true;
-              const regex = new RegExp(`(${searchValue})`, 'gi');
-              questionDiv.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
-            } else {
-              qa.style.display = 'none';
-              questionDiv.innerHTML = text;
-            }
-          });
-
-          let noResults = section.querySelector('.no-results');
-          if(!anyVisible){
-            if(!noResults){
-              noResults = document.createElement('div');
-              noResults.className = 'no-results';
-              noResults.textContent = 'No matching questions found.';
-              qaContainer.appendChild(noResults);
-            }
-          } else {
-            if(noResults) noResults.remove();
-          }
-        });
+      qas.forEach((item,idx)=>{
+        const qaDiv=document.createElement('div');qaDiv.className='qa-item';qaDiv.setAttribute('role','listitem');qaDiv.setAttribute('tabindex','0');qaDiv.setAttribute('aria-expanded','false');
+        qaDiv.innerHTML=`<div class='question'>${idx+1}. ${item.q}</div><div class='answer' aria-hidden='true'>${item.a}</div>`;
+        questionsContainer.appendChild(qaDiv);
       });
 
-      // Accordion behavior
-      modulesDiv.addEventListener('click', (e) => {
-        const moduleTitle = e.target.closest('.module-title');
-        if(moduleTitle){
-          const currentModule = moduleTitle.parentElement;
-          document.querySelectorAll('.module.active').forEach(mod => {
-            if(mod !== currentModule) mod.classList.remove('active');
-          });
-          currentModule.classList.toggle('active');
-          return;
-        }
+      qaContainer.appendChild(questionsContainer);section.appendChild(qaContainer);modulesDiv.appendChild(section);
 
-        const item = e.target.closest('.qa-item');
-        if(!item) return;
-        const qaContainer = item.parentElement;
-
-        qaContainer.querySelectorAll('.qa-item.active').forEach(el => {
-          if(el !== item) el.classList.remove('active');
+      const searchBox=section.querySelector('.search-box-inline');
+      const debouncedSearch=debounce((searchValue)=>{
+        let anyVisible=false;
+        if(searchValue.trim()!==''){section.classList.add('active');section.querySelector('.module-header').setAttribute('aria-expanded','true');document.querySelectorAll('.module.active').forEach(mod=>{if(mod!==section){mod.classList.remove('active');mod.querySelector('.module-header').setAttribute('aria-expanded','false');}});}
+        questionsContainer.querySelectorAll('.qa-item').forEach(qa=>{
+          const questionDiv=qa.querySelector('.question');const originalText=questionDiv.textContent;
+          if(originalText.toLowerCase().includes(searchValue.toLowerCase())){
+            qa.style.display='block';anyVisible=true;
+            if(searchValue.trim()!==''){const regex=new RegExp(`(${searchValue.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');questionDiv.innerHTML=originalText.replace(regex,'<span class="highlight">$1</span>');} else{questionDiv.innerHTML=originalText;}
+          }else{qa.style.display='none';questionDiv.innerHTML=originalText;}
         });
+        let noResults=section.querySelector('.no-results');if(!anyVisible&&searchValue.trim()!==''){if(!noResults){noResults=document.createElement('div');noResults.className='no-results';noResults.textContent='No matching questions found.';qaContainer.appendChild(noResults);}}else{if(noResults) noResults.remove();}
+      },300);
+      searchBox.addEventListener('input',e=>debouncedSearch(e.target.value));
+      searchBox.addEventListener('keydown',e=>{if(e.key==='Escape'){searchBox.value='';debouncedSearch('');}});
+    });
 
-        item.classList.toggle('active');
-      });
+    modulesDiv.addEventListener('click',e=>{
+      const header=e.target.closest('.module-header');if(header){const currentModule=header.parentElement;const isActive=currentModule.classList.contains('active');document.querySelectorAll('.module.active').forEach(mod=>{if(mod!==currentModule){mod.classList.remove('active');mod.querySelector('.module-header').setAttribute('aria-expanded','false');}});currentModule.classList.toggle('active');header.setAttribute('aria-expanded',!isActive);return;}
+      const item=e.target.closest('.qa-item');if(!item) return;const isActive=item.classList.contains('active');const qaContainer=item.parentElement;qaContainer.querySelectorAll('.qa-item.active').forEach(el=>{if(el!==item){el.classList.remove('active');el.setAttribute('aria-expanded','false');el.querySelector('.answer').setAttribute('aria-hidden','true');}});item.classList.toggle('active');item.setAttribute('aria-expanded',!isActive);item.querySelector('.answer').setAttribute('aria-hidden',isActive);
+    });
 
-    } catch (err) {
-      console.error('Error loading JSON:', err);
-    }
-  }
-
-  loadModules();
+    modulesDiv.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.target.click();}});
+  }catch(err){console.error('Error loading JSON:',err);hideLoading();showError();}
+}
+loadModules();
 </script>
-
 </body>
 </html>
