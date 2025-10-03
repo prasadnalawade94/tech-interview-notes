@@ -22,7 +22,6 @@
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
 }
-
 *{box-sizing:border-box;}
 body{
   font-family:'Inter',sans-serif;
@@ -49,11 +48,21 @@ body{
   -webkit-text-fill-color:transparent;
 }
 .header p{color:var(--text-secondary);font-size:1.05rem;margin:0;font-weight:400;}
-
 .loading{text-align:center;padding:2rem;color:var(--text-secondary);font-size:1rem;}
 .spinner{display:inline-block;width:1.8rem;height:1.8rem;border:3px solid var(--border-color);border-radius:50%;border-top-color:var(--primary-color);animation:spin 1s linear infinite;margin-right:0.5rem;}
 @keyframes spin{to{transform:rotate(360deg);}}
 .error{background:#fef2f2;border:1px solid #fecaca;color:#dc2626;padding:0.75rem;border-radius:var(--radius-md);text-align:center;margin:0.75rem 0;}
+.download-btn{
+  display:block;
+  margin:0.75rem 0;
+  padding:0.5rem 1rem;
+  background:var(--accent-color);
+  color:#fff;
+  border:none;
+  border-radius:var(--radius-md);
+  cursor:pointer;
+  font-weight:600;
+}
 
 .module{margin-bottom:1rem;background:rgba(255,255,255,0.95);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);border:1px solid rgba(255,255,255,0.2);transition:all 0.3s;}
 .module:hover{transform:translateY(-2px);box-shadow:0 20px 25px -5px rgba(0,0,0,0.1);}
@@ -63,7 +72,51 @@ body{
 .chevron{transition:transform 0.3s;font-size:1.2rem;}
 .module.active .chevron{transform:rotate(180deg);}
 
-.search-box-inline{padding:0.35rem 0.5rem;font-size:0.85rem;border-radius:var(--radius-md);border:none;outline:none;color:#1e293b;background:#fff;}
+/* Search box with mic */
+.search-box-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.search-box-inline {
+  width: 100%;
+  padding: 0.35rem 2.5rem 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  border-radius: var(--radius-md);
+  border: none;
+  outline: none;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+.search-box-inline:focus{box-shadow:0 0 0 2px var(--accent-color);}
+.mic-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+.mic-indicator {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  display: none;
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); opacity:1; }
+  50% { transform: scale(1.5); opacity:0.6; }
+  100% { transform: scale(1); opacity:1; }
+}
 
 .qa-container{display:none;padding:1rem;background:rgba(248,250,252,0.8);}
 .module.active .qa-container{display:block;animation:slideDown 0.3s ease;}
@@ -83,7 +136,7 @@ body{
 .no-results{color:var(--text-muted);font-style:italic;padding:1rem;text-align:center;background:rgba(248,250,252,0.8);border-radius:var(--radius-md);border:2px dashed var(--border-color);}
 .no-results::before{content:'🔍';display:block;font-size:1.5rem;margin-bottom:0.25rem;}
 
-@media(max-width:768px){.module-header{align-items:flex-start;gap:0.5rem;}.search-box-inline{width:100%;}}
+@media(max-width:768px){.module-header{align-items:flex-start;gap:0.5rem;}.search-box-wrapper{width:100%;}}
 @media(prefers-color-scheme:dark){
   :root{--text-primary:#f1f5f9;--text-secondary:#cbd5e1;--text-muted:#64748b;--border-color:#334155;}
   body{background:linear-gradient(135deg,#1e293b 0%,#334155 100%);}
@@ -101,6 +154,7 @@ body{
     <h1>Interview Q&A by Module</h1>
     <p>Explore comprehensive interview questions organized by topics</p>
   </div>
+  <button class="download-btn">Download Current Q&A JSON</button>
   <div id="loading" class="loading"><div class="spinner"></div>Loading interview questions...</div>
   <div id="error" class="error" style="display:none;">Failed to load interview questions.</div>
   <div id="modules"></div>
@@ -126,51 +180,203 @@ async function loadModules(){
 
     Object.entries(qaModules).forEach(([module,qas])=>{
       const section=document.createElement('div');section.className='module';
+      section.setAttribute('draggable','true');
       section.innerHTML=`
         <div class="module-header" tabindex="0" aria-expanded="false">
-          <div class="module-title">
-            <span>${module}</span>
-            <span class="chevron">▼</span>
-          </div>
-          <input type="text" class="search-box-inline" placeholder="Search..." aria-label="Search in ${module}">
+          <div class="module-title"><span>${module}</span><span class="chevron">▼</span></div>
         </div>
       `;
+
       const qaContainer=document.createElement('div');qaContainer.className='qa-container';
-      const questionsContainer=document.createElement('div');questionsContainer.setAttribute('role','list');
+      qaContainer.innerHTML=`
+        <div class="search-box-wrapper">
+          <input type="text" class="search-box-inline" placeholder="Search..." aria-label="Search in ${module}">
+          <button class="mic-btn" title="Speak"><span>🎤</span><span class="mic-indicator"></span></button>
+        </div>
+      `;
+      const questionsContainer=document.createElement('div');
+      questionsContainer.setAttribute('role','list');
+      qaContainer.appendChild(questionsContainer);
+      section.appendChild(qaContainer);
+      modulesDiv.appendChild(section);
 
       qas.forEach((item,idx)=>{
-        const qaDiv=document.createElement('div');qaDiv.className='qa-item';qaDiv.setAttribute('role','listitem');qaDiv.setAttribute('tabindex','0');qaDiv.setAttribute('aria-expanded','false');
+        const qaDiv=document.createElement('div');qaDiv.className='qa-item';
+        qaDiv.setAttribute('role','listitem');
+        qaDiv.setAttribute('tabindex','0');
+        qaDiv.setAttribute('aria-expanded','false');
+        qaDiv.setAttribute('draggable','true');
         qaDiv.innerHTML=`<div class='question'>${idx+1}. ${item.q}</div><div class='answer' aria-hidden='true'>${item.a}</div>`;
         questionsContainer.appendChild(qaDiv);
+
+        // QA drag
+        qaDiv.addEventListener('dragstart',()=>qaDiv.classList.add('dragging'));
+        qaDiv.addEventListener('dragend',()=>qaDiv.classList.remove('dragging'));
+        questionsContainer.addEventListener('dragover',e=>{
+          e.preventDefault();
+          const dragging=questionsContainer.querySelector('.dragging');
+          const afterElem=getDragAfterElementQA(questionsContainer,e.clientY);
+          if(afterElem==null) questionsContainer.appendChild(dragging);
+          else questionsContainer.insertBefore(dragging,afterElem);
+        });
       });
 
-      qaContainer.appendChild(questionsContainer);section.appendChild(qaContainer);modulesDiv.appendChild(section);
-
       const searchBox=section.querySelector('.search-box-inline');
+      const micBtn=section.querySelector('.mic-btn');
+      const indicator=section.querySelector('.mic-indicator');
+
       const debouncedSearch=debounce((searchValue)=>{
         let anyVisible=false;
-        if(searchValue.trim()!==''){section.classList.add('active');section.querySelector('.module-header').setAttribute('aria-expanded','true');document.querySelectorAll('.module.active').forEach(mod=>{if(mod!==section){mod.classList.remove('active');mod.querySelector('.module-header').setAttribute('aria-expanded','false');}});}
+        if(searchValue.trim()!==''){
+          section.classList.add('active');
+          section.querySelector('.module-header').setAttribute('aria-expanded','true');
+        }
         questionsContainer.querySelectorAll('.qa-item').forEach(qa=>{
-          const questionDiv=qa.querySelector('.question');const originalText=questionDiv.textContent;
+          const questionDiv=qa.querySelector('.question');
+          const originalText=questionDiv.textContent;
           if(originalText.toLowerCase().includes(searchValue.toLowerCase())){
             qa.style.display='block';anyVisible=true;
-            if(searchValue.trim()!==''){const regex=new RegExp(`(${searchValue.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');questionDiv.innerHTML=originalText.replace(regex,'<span class="highlight">$1</span>');} else{questionDiv.innerHTML=originalText;}
+            if(searchValue.trim()!==''){
+              const regex=new RegExp(`(${searchValue.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');
+              questionDiv.innerHTML=originalText.replace(regex,'<span class="highlight">$1</span>');
+            } else questionDiv.innerHTML=originalText;
           }else{qa.style.display='none';questionDiv.innerHTML=originalText;}
         });
-        let noResults=section.querySelector('.no-results');if(!anyVisible&&searchValue.trim()!==''){if(!noResults){noResults=document.createElement('div');noResults.className='no-results';noResults.textContent='No matching questions found.';qaContainer.appendChild(noResults);}}else{if(noResults) noResults.remove();}
+        let noResults=section.querySelector('.no-results');
+        if(!anyVisible&&searchValue.trim()!==''){
+          if(!noResults){
+            noResults=document.createElement('div');
+            noResults.className='no-results';
+            noResults.textContent='No matching questions found.';
+            qaContainer.appendChild(noResults);
+          }
+        }else{if(noResults) noResults.remove();}
       },300);
       searchBox.addEventListener('input',e=>debouncedSearch(e.target.value));
       searchBox.addEventListener('keydown',e=>{if(e.key==='Escape'){searchBox.value='';debouncedSearch('');}});
+
+      // Mic recognition
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if(SpeechRecognition){
+        const recognition = new SpeechRecognition();
+        recognition.continuous=false; recognition.interimResults=true; recognition.lang='en-US';
+        micBtn.addEventListener('click',()=>{
+          recognition.start();
+          indicator.style.display='block';
+        });
+        recognition.onresult=(event)=>{
+          const transcript = Array.from(event.results).map(r=>r[0].transcript).join('');
+          searchBox.value = transcript;
+          searchBox.dispatchEvent(new Event('input'));
+        };
+        recognition.onend=()=>{indicator.style.display='none';};
+        recognition.onerror=()=>{indicator.style.display='none';};
+      }
+
+      // Module drag
+      section.addEventListener('dragstart',()=>section.classList.add('dragging'));
+      section.addEventListener('dragend',()=>section.classList.remove('dragging'));
     });
 
+    // Module drag container
+    modulesDiv.addEventListener('dragover', e => {
+      e.preventDefault();
+      const dragging=document.querySelector('.module.dragging');
+      const afterElem=getDragAfterElement(modulesDiv,e.clientY);
+      if(afterElem==null) modulesDiv.appendChild(dragging);
+      else modulesDiv.insertBefore(dragging,afterElem);
+    });
+
+    function getDragAfterElement(container,y){
+      const draggables=[...container.querySelectorAll('.module:not(.dragging)')];
+      return draggables.reduce((closest,child)=>{
+        const box=child.getBoundingClientRect();
+        const offset=y-box.top-box.height/2;
+        if(offset<0 && offset>closest.offset) return {offset:offset,element:child}; 
+        else return closest;
+      },{offset:Number.NEGATIVE_INFINITY}).element;
+    }
+    function getDragAfterElementQA(container,y){
+      const draggables=[...container.querySelectorAll('.qa-item:not(.dragging)')];
+      return draggables.reduce((closest,child)=>{
+        const box=child.getBoundingClientRect();
+        const offset=y-box.top-box.height/2;
+        if(offset<0 && offset>closest.offset) return {offset:offset,element:child}; 
+        else return closest;
+      },{offset:Number.NEGATIVE_INFINITY}).element;
+    }
+
+    // QA click expand/collapse + focus handling
     modulesDiv.addEventListener('click',e=>{
-      const header=e.target.closest('.module-header');if(header){const currentModule=header.parentElement;const isActive=currentModule.classList.contains('active');document.querySelectorAll('.module.active').forEach(mod=>{if(mod!==currentModule){mod.classList.remove('active');mod.querySelector('.module-header').setAttribute('aria-expanded','false');}});currentModule.classList.toggle('active');header.setAttribute('aria-expanded',!isActive);return;}
-      const item=e.target.closest('.qa-item');if(!item) return;const isActive=item.classList.contains('active');const qaContainer=item.parentElement;qaContainer.querySelectorAll('.qa-item.active').forEach(el=>{if(el!==item){el.classList.remove('active');el.setAttribute('aria-expanded','false');el.querySelector('.answer').setAttribute('aria-hidden','true');}});item.classList.toggle('active');item.setAttribute('aria-expanded',!isActive);item.querySelector('.answer').setAttribute('aria-hidden',isActive);
+      const header=e.target.closest('.module-header');
+      if(header){
+        const currentModule=header.parentElement;
+        const isActive=currentModule.classList.contains('active');
+        document.querySelectorAll('.module.active').forEach(mod=>{
+          if(mod!==currentModule){
+            mod.classList.remove('active');
+            mod.querySelector('.module-header').setAttribute('aria-expanded','false');
+          }
+        });
+        currentModule.classList.toggle('active');
+        header.setAttribute('aria-expanded',!isActive);
+
+        // 👉 auto focus + select search box
+        if(!isActive){
+          const searchBox=currentModule.querySelector('.search-box-inline');
+          if(searchBox){
+            setTimeout(()=>{
+              searchBox.focus();
+              searchBox.select();
+            },200);
+          }
+        }
+        return;
+      }
+
+      // QA item toggle
+      const item=e.target.closest('.qa-item');
+      if(item){
+        const isActive=item.classList.contains('active');
+        const qaContainer=item.parentElement;
+        qaContainer.querySelectorAll('.qa-item.active').forEach(el=>{
+          if(el!==item){
+            el.classList.remove('active');
+            el.setAttribute('aria-expanded','false');
+            el.querySelector('.answer').setAttribute('aria-hidden','true');
+          }
+        });
+        item.classList.toggle('active');
+        item.setAttribute('aria-expanded',!isActive);
+        item.querySelector('.answer').setAttribute('aria-hidden',isActive);
+      }
+
+      // 👉 module आत कुठेही क्लिक झालं तर search box focus (फक्त search/mic सोडून)
+      const activeModule=document.querySelector('.module.active');
+      if(activeModule && !e.target.closest('.search-box-wrapper')){
+        const searchBox=activeModule.querySelector('.search-box-inline');
+        if(searchBox){
+          setTimeout(()=>searchBox.focus(),100);
+        }
+      }
     });
 
-    modulesDiv.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.target.click();}});
-  }catch(err){console.error('Error loading JSON:',err);hideLoading();showError();}
+  } catch(err){hideLoading();showError();}
 }
+
+// download btn
+document.querySelector('.download-btn').addEventListener('click',async()=>{
+  try{
+    const res=await axios.get(JSON_URL);
+    const blob=new Blob([JSON.stringify(res.data,null,2)],{type:'application/json'});
+    const link=document.createElement('a');
+    link.href=URL.createObjectURL(blob);
+    link.download='qa-modules.json';
+    link.click();
+    URL.revokeObjectURL(link.href);
+  }catch(err){alert('Failed to download JSON');}
+});
+
 loadModules();
 </script>
 </body>
