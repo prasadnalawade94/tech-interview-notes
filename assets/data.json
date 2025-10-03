@@ -1,0 +1,35 @@
+{
+      "JavaScript": [
+        {q: "What are the data types in JavaScript?", a: "Primitive: String, Number, Boolean, Null, Undefined, Symbol, BigInt. Non-primitive: Object (Array, Function)."},
+        {q: "Explain closures.", a: "A closure is a function that remembers its lexical scope even when executed outside of it."},
+        {q: "What is event loop?", a: "It handles async tasks by processing call stack and callback queue in JS runtime."}
+      ],
+      "Node.js": [
+        {q: "What is EventEmitter in Node.js?", a: "It is a core module that facilitates event-driven programming with emitters and listeners."},
+        {q: "Difference between process.nextTick() and setImmediate()?", a: "nextTick runs before the event loop continues, setImmediate runs on the next iteration of the event loop."}
+      ],
+      "React.js": [
+        {q: "What are hooks in React?", a: "Functions like useState, useEffect that let you manage state and lifecycle in functional components."},
+        {q: "Difference between state and props?", a: "Props are inputs to components, state is local and managed within the component."}
+      ],
+      "Vue.js": [
+        {q: "What is Vuex?", a: "Vuex is a state management library for Vue.js applications."},
+        {q: "Difference between v-if and v-show?", a: "v-if conditionally renders elements, v-show toggles visibility with CSS."}
+      ],
+      "HTML": [
+        {q: "What are semantic HTML tags?", a: "Tags like <header>, <footer>, <article> that give meaning to the content."},
+        {q: "Difference between inline and block elements?", a: "Block takes full width, inline takes only necessary width."}
+      ],
+      "CSS": [
+        {q: "What are CSS Flexbox and Grid?", a: "Flexbox is for one-dimensional layouts, Grid is for two-dimensional layouts."},
+        {q: "Difference between relative, absolute, fixed positioning?", a: "Relative moves based on itself, absolute relative to parent, fixed relative to viewport."}
+      ],
+      "NestJS": [
+        {q: "What is a module in NestJS?", a: "A module is a class annotated with @Module decorator that organizes the app structure."},
+        {q: "What are providers in NestJS?", a: "Services or classes that can be injected using dependency injection."}
+      ],
+      "Programs": [
+        {q: "Write a JS program to reverse a string.", a: "'hello'.split('').reverse().join('') // 'olleh'"},
+        {q: "Write a JS program to check palindrome.", a: "function isPal(s){return s===s.split('').reverse().join('');}"}
+      ]
+    }
