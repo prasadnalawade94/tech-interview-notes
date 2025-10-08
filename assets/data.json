@@ -56,6 +56,258 @@
     {"q": "What is memoization?", "a": "Optimization technique to cache results of expensive function calls."},
     {"q": "What is strict equality in JavaScript?", "a": "Comparison using === operator without type conversion."}
   ],
+  "TypeScript": [
+    {
+      "q": "What is TypeScript?",
+      "a": "TypeScript is a superset of JavaScript that adds static typing and compile-time checking.",
+      "ex": "let name: string = 'Prasad';"
+    },
+    {
+      "q": "Why use TypeScript?",
+      "a": "For early error detection, better tooling, and type safety.",
+      "ex": "function add(a: number, b: number): number { return a + b; }"
+    },
+    {
+      "q": "How is TypeScript different from JavaScript?",
+      "a": "TypeScript adds types, interfaces, and compile-time checks to JavaScript.",
+      "ex": "let age: number = 25; // error if assigned a string"
+    },
+    {
+      "q": "What are data types in TypeScript?",
+      "a": "string, number, boolean, null, undefined, any, unknown, never, void, array, tuple, enum.",
+      "ex": "let arr: number[] = [1, 2, 3];"
+    },
+    {
+      "q": "What is an interface?",
+      "a": "It defines the structure of an object.",
+      "ex": "interface User { name: string; age: number; }"
+    },
+    {
+      "q": "What are enums?",
+      "a": "Enums define a set of named constants.",
+      "ex": "enum Direction { Up, Down, Left, Right }"
+    },
+    {
+      "q": "What are type aliases?",
+      "a": "Custom names for types or unions.",
+      "ex": "type ID = string | number;"
+    },
+    {
+      "q": "What is the 'any' type?",
+      "a": "Disables type checking for that variable.",
+      "ex": "let value: any = 10; value = 'hello';"
+    },
+    {
+      "q": "What is the 'unknown' type?",
+      "a": "Similar to any but safer; must check before using.",
+      "ex": "let data: unknown = 'hi'; if (typeof data === 'string') console.log(data.toUpperCase());"
+    },
+    {
+      "q": "What is the 'never' type?",
+      "a": "Represents values that never occur.",
+      "ex": "function fail(): never { throw new Error('Error'); }"
+    },
+    {
+      "q": "What is type inference?",
+      "a": "Compiler automatically detects types.",
+      "ex": "let count = 5; // inferred as number"
+    },
+    {
+      "q": "What are generics?",
+      "a": "Used to create reusable components that work with different types.",
+      "ex": "function identity<T>(val: T): T { return val; }"
+    },
+    {
+      "q": "What is a tuple?",
+      "a": "An array with fixed types and order.",
+      "ex": "let person: [string, number] = ['Prasad', 25];"
+    },
+    {
+      "q": "What are union types?",
+      "a": "Allow multiple possible types.",
+      "ex": "let id: string | number = 101;"
+    },
+    {
+      "q": "What is intersection type?",
+      "a": "Combines multiple types.",
+      "ex": "type A = { a: string }; type B = { b: number }; type C = A & B;"
+    },
+    {
+      "q": "What is type assertion?",
+      "a": "Manually telling compiler a variable’s type.",
+      "ex": "let val: unknown = 'hi'; let len = (val as string).length;"
+    },
+    {
+      "q": "What are modules?",
+      "a": "Used to organize code using import/export.",
+      "ex": "export function greet() { console.log('Hi'); }"
+    },
+    {
+      "q": "What is structural typing?",
+      "a": "Type compatibility depends on structure, not name.",
+      "ex": "type Point = { x: number }; let p: Point = { x: 10 };"
+    },
+    {
+      "q": "What are decorators?",
+      "a": "Functions that modify classes or properties.",
+      "ex": "function Logger(target: any) { console.log('Class created:', target); }"
+    },
+    {
+      "q": "What is 'readonly' property?",
+      "a": "Prevents modification after initialization.",
+      "ex": "interface User { readonly id: number; name: string; }"
+    },
+    {
+      "q": "What are utility types?",
+      "a": "Built-in types like Partial, Pick, Omit, Readonly.",
+      "ex": "type PartialUser = Partial<{ name: string; age: number; }>"
+    },
+    {
+      "q": "What is 'keyof' operator?",
+      "a": "Extracts property names as union type.",
+      "ex": "type Person = { name: string; age: number }; type Keys = keyof Person; // 'name' | 'age'"
+    },
+    {
+      "q": "What is 'typeof' operator?",
+      "a": "Gets the type of a variable or object.",
+      "ex": "let num = 10; type NumType = typeof num;"
+    },
+    {
+      "q": "What is a mapped type?",
+      "a": "Transforms one type into another.",
+      "ex": "type Readonly<T> = { readonly [K in keyof T]: T[K] };"
+    },
+    {
+      "q": "What are conditional types?",
+      "a": "Applies conditions to types.",
+      "ex": "type IsString<T> = T extends string ? true : false;"
+    },
+    {
+      "q": "What is 'infer' keyword?",
+      "a": "Used in conditional types to infer types automatically.",
+      "ex": "type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;"
+    },
+    {
+      "q": "What is type narrowing?",
+      "a": "Refining types using runtime checks.",
+      "ex": "function print(val: string | number) { if (typeof val === 'string') console.log(val.toUpperCase()); }"
+    },
+    {
+      "q": "What is the 'void' type?",
+      "a": "Used for functions that return nothing.",
+      "ex": "function logMessage(): void { console.log('Hello'); }"
+    },
+    {
+      "q": "What is the 'object' type?",
+      "a": "Represents non-primitive values.",
+      "ex": "let obj: object = { name: 'TS' };"
+    },
+    {
+      "q": "What is 'strict' mode?",
+      "a": "Enables all strict type checking options.",
+      "ex": "Inside tsconfig.json: { 'compilerOptions': { 'strict': true } }"
+    },
+    {
+      "q": "What is 'tsconfig.json'?",
+      "a": "Configuration file for TypeScript compiler settings.",
+      "ex": "{ 'compilerOptions': { 'target': 'es6' } }"
+    },
+    {
+      "q": "How do you compile TypeScript?",
+      "a": "Using 'tsc' command to generate JS files.",
+      "ex": "tsc app.ts"
+    },
+    {
+      "q": "What are index signatures?",
+      "a": "Define types for dynamic object keys.",
+      "ex": "interface Dictionary { [key: string]: string; }"
+    },
+    {
+      "q": "How to define optional properties?",
+      "a": "Use '?' symbol in interface properties.",
+      "ex": "interface User { name: string; age?: number; }"
+    },
+    {
+      "q": "What is an abstract class?",
+      "a": "A class that can’t be instantiated and may contain abstract methods.",
+      "ex": "abstract class Animal { abstract sound(): void; }"
+    },
+    {
+      "q": "What are ambient declarations?",
+      "a": "Used to describe external code with 'declare'.",
+      "ex": "declare let process: any;"
+    },
+    {
+      "q": "What is module augmentation?",
+      "a": "Adding new members to existing modules.",
+      "ex": "declare module 'fs' { export function customFunc(): void; }"
+    },
+    {
+      "q": "What is JSX in TypeScript?",
+      "a": "Used for React components written in .tsx files.",
+      "ex": "const App = () => <h1>Hello TSX</h1>;"
+    },
+    {
+      "q": "What are namespaces?",
+      "a": "Used to group related code under one name.",
+      "ex": "namespace Utils { export const PI = 3.14; }"
+    },
+    {
+      "q": "What is declaration merging?",
+      "a": "Combining multiple declarations with the same name into one.",
+      "ex": "interface A { x: number; } interface A { y: number; } // merged"
+    },
+    {
+      "q": "What is type alias vs interface difference?",
+      "a": "Type alias can represent primitives or unions; interface cannot.",
+      "ex": "type ID = string | number; interface User { id: ID; }"
+    },
+    {
+      "q": "What is 'this' type?",
+      "a": "Refers to the type of the current class instance.",
+      "ex": "class Counter { count = 0; inc(): this { this.count++; return this; } }"
+    },
+    {
+      "q": "How to define a function type?",
+      "a": "Using function signature syntax.",
+      "ex": "let add: (a: number, b: number) => number;"
+    },
+    {
+      "q": "What is the difference between 'let', 'const', and 'var'?",
+      "a": "let/const have block scope; var has function scope.",
+      "ex": "if(true){ let a=1; var b=2; } console.log(b); // works"
+    },
+    {
+      "q": "What are default type parameters?",
+      "a": "Provide default types for generics.",
+      "ex": "function identity<T = string>(value: T): T { return value; }"
+    },
+    {
+      "q": "What is async/await in TypeScript?",
+      "a": "Used for asynchronous operations using promises.",
+      "ex": "async function fetchData() { const res = await fetch('/api'); }"
+    },
+    {
+      "q": "What are the disadvantages of TypeScript?",
+      "a": "Requires compilation, setup overhead, and may be verbose for small apps.",
+      "ex": "// must compile before running: tsc index.ts"
+    },
+    {
+      "q": "What is the difference between compile-time and run-time type checking?",
+      "a": "TypeScript checks at compile-time; JavaScript checks at runtime.",
+      "ex": "let num: number = 'abc'; // compile error"
+    },
+    {
+      "q": "What is the 'never' type used for in functions?",
+      "a": "For functions that never return or throw an error.",
+      "ex": "function crash(): never { throw new Error('Fail'); }"
+    },
+    {
+      "q": "Can TypeScript run directly in the browser?",
+      "a": "No, it must be compiled into JavaScript first.",
+      "ex": "// compile using: tsc script.ts"
+    }
+  ],
   "Node.js": [
     {"q": "What is Node.js?", "a": "Node.js is a JavaScript runtime built on Chrome's V8 engine for server-side development."},
     {"q": "What is the difference between Node.js and JavaScript in the browser?", "a": "Node.js runs on the server, browser JS runs on client-side."},
