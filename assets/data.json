@@ -1,6 +1,276 @@
 {
 
   "JavaScript": [
+    {
+      "q": "What is JavaScript?",
+      "a": "JavaScript is a dynamic, interpreted programming language used mainly for web development.",
+      "example": "console.log('Hello, JS');"
+    },
+    {
+      "q": "What are the data types in JavaScript?",
+      "a": "Primitive: String, Number, Boolean, Null, Undefined, Symbol, BigInt; Non-primitive: Object.",
+      "example": "let a = 5; let b = 'Hi'; let c = {x:1};"
+    },
+    {
+      "q": "What is the difference between var, let, and const?",
+      "a": "var is function-scoped; let and const are block-scoped; const cannot be reassigned.",
+      "example": "let x=1; const y=2; var z=3;"
+    },
+    {
+      "q": "Explain hoisting.",
+      "a": "JavaScript moves variable and function declarations to the top of their scope before execution.",
+      "example": "console.log(a); var a=10; // undefined"
+    },
+    {
+      "q": "What is a closure?",
+      "a": "A closure is a function that retains access to its outer scope variables.",
+      "example": "function outer(){ let x=0; return ()=>x++; } const inc=outer(); inc();"
+    },
+    {
+      "q": "What is scope?",
+      "a": "Scope determines variable accessibility (global, function, block).",
+      "example": "if(true){ let x=5; } console.log(x); // error"
+    },
+    {
+      "q": "Difference between == and ===?",
+      "a": "== checks value only; === checks both type and value.",
+      "example": "5 == '5' // true; 5 === '5' // false"
+    },
+    {
+      "q": "What are arrow functions?",
+      "a": "Arrow functions are concise syntax for functions that don't bind their own this.",
+      "example": "const add=(a,b)=>a+b;"
+    },
+    {
+      "q": "What is 'this' keyword?",
+      "a": "'this' refers to the current execution context or owner object.",
+      "example": "const obj={name:'JS',show(){console.log(this.name);}}; obj.show();"
+    },
+    {
+      "q": "What is a promise?",
+      "a": "Promise handles asynchronous operations with resolve and reject states.",
+      "example": "new Promise(res=>res('done')).then(console.log);"
+    },
+    {
+      "q": "What are async and await?",
+      "a": "They simplify promise handling, making async code look synchronous.",
+      "example": "async function f(){ return await Promise.resolve('ok'); }"
+    },
+    {
+      "q": "What is the call stack?",
+      "a": "A stack that stores function calls in order of execution.",
+      "example": "function a(){b();} function b(){console.log('hi');} a();"
+    },
+    {
+      "q": "What is an event loop?",
+      "a": "It continuously checks the call stack and callback queue to execute async tasks.",
+      "example": "setTimeout(()=>console.log('async'),0); console.log('sync');"
+    },
+    {
+      "q": "Explain event bubbling.",
+      "a": "Events propagate from the target element up through parent elements.",
+      "example": "div.onclick=()=>alert('div'); btn.onclick=()=>alert('btn');"
+    },
+    {
+      "q": "What is event capturing?",
+      "a": "The opposite of bubbling; event moves from outer to inner elements first.",
+      "example": "elem.addEventListener('click', fn, true);"
+    },
+    {
+      "q": "What is a callback function?",
+      "a": "A function passed as an argument to another function.",
+      "example": "setTimeout(()=>console.log('done'),1000);"
+    },
+    {
+      "q": "Explain destructuring.",
+      "a": "Extracting values from arrays or objects into variables.",
+      "example": "const {name}={name:'John'}; console.log(name);"
+    },
+    {
+      "q": "What is the spread operator?",
+      "a": "It expands arrays or objects into individual elements.",
+      "example": "const arr=[1,2]; const all=[...arr,3];"
+    },
+    {
+      "q": "What is rest operator?",
+      "a": "It collects multiple elements into an array.",
+      "example": "function sum(...nums){return nums.reduce((a,b)=>a+b);}"
+    },
+    {
+      "q": "What is a prototype in JavaScript?",
+      "a": "Every JS object has a prototype from which it can inherit properties.",
+      "example": "function Person(){} Person.prototype.sayHi=function(){return 'Hi'};"
+    },
+    {
+      "q": "Explain prototypal inheritance.",
+      "a": "Objects inherit properties and methods from other objects via the prototype chain.",
+      "example": "const obj=Object.create({greet(){console.log('Hi');}}); obj.greet();"
+    },
+    {
+      "q": "What is the difference between function declaration and expression?",
+      "a": "Declarations are hoisted; expressions are not.",
+      "example": "func(); function func(){}; const f=function(){};"
+    },
+    {
+      "q": "What are template literals?",
+      "a": "Strings with backticks allowing interpolation and multiline strings.",
+      "example": "let name='JS'; console.log(`Hello ${name}`);"
+    },
+    {
+      "q": "What is NaN?",
+      "a": "NaN means Not-a-Number, resulting from invalid numeric operations.",
+      "example": "parseInt('abc'); // NaN"
+    },
+    {
+      "q": "What is use strict?",
+      "a": "It enforces stricter parsing and error handling in JS.",
+      "example": "'use strict'; x=10; // error"
+    },
+    {
+      "q": "What are default parameters?",
+      "a": "They allow function parameters to have default values.",
+      "example": "function greet(name='User'){return 'Hi '+name;}"
+    },
+    {
+      "q": "What are higher-order functions?",
+      "a": "Functions that take other functions as arguments or return them.",
+      "example": "function apply(f,v){return f(v);} apply(console.log,'Hi');"
+    },
+    {
+      "q": "What is map()?",
+      "a": "Creates a new array by applying a function to each element.",
+      "example": "[1,2,3].map(x=>x*2);"
+    },
+    {
+      "q": "What is filter()?",
+      "a": "Creates a new array with elements that pass a condition.",
+      "example": "[1,2,3].filter(x=>x>1);"
+    },
+    {
+      "q": "What is reduce()?",
+      "a": "Applies a function to accumulate array values into one.",
+      "example": "[1,2,3].reduce((a,b)=>a+b,0);"
+    },
+    {
+      "q": "What is the difference between slice() and splice()?",
+      "a": "slice() returns a copy; splice() modifies the array.",
+      "example": "arr.slice(1,3); arr.splice(1,1);"
+    },
+    {
+      "q": "What is IIFE?",
+      "a": "Immediately Invoked Function Expression executes right after it's defined.",
+      "example": "(function(){console.log('Run');})();"
+    },
+    {
+      "q": "What is the difference between null and undefined?",
+      "a": "undefined means no value assigned; null means explicitly empty.",
+      "example": "let x; console.log(x); x=null;"
+    },
+    {
+      "q": "What is a module in JavaScript?",
+      "a": "Reusable piece of code that can be imported/exported.",
+      "example": "export const a=10; import {a} from './file.js';"
+    },
+    {
+      "q": "What is JSON?",
+      "a": "JSON is a format for data exchange using key-value pairs.",
+      "example": "JSON.parse('{\"name\":\"John\"}');"
+    },
+    {
+      "q": "What are generators?",
+      "a": "Functions that can be paused and resumed using yield.",
+      "example": "function* gen(){yield 1; yield 2;} const g=gen();"
+    },
+    {
+      "q": "What is debouncing?",
+      "a": "Delays function execution until after a certain time has passed since the last call.",
+      "example": "function debounce(fn,d){let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>fn(...a),d);}}"
+    },
+    {
+      "q": "What is throttling?",
+      "a": "Limits how often a function can run within a time interval.",
+      "example": "function throttle(fn,limit){let t=false;return(...a)=>{if(!t){fn(...a);t=true;setTimeout(()=>t=false,limit);}}}"
+    },
+    {
+      "q": "What is localStorage?",
+      "a": "Web storage that persists data even after browser close.",
+      "example": "localStorage.setItem('name','John');"
+    },
+    {
+      "q": "What is sessionStorage?",
+      "a": "Stores data per browser session (cleared when tab closes).",
+      "example": "sessionStorage.setItem('token','123');"
+    },
+    {
+      "q": "What is difference between deep and shallow copy?",
+      "a": "Shallow copy copies references; deep copy copies actual values.",
+      "example": "let obj1={a:1}; let obj2={...obj1};"
+    },
+    {
+      "q": "What is memoization?",
+      "a": "Caching results of expensive function calls.",
+      "example": "const memo=(fn)=>{const c={};return x=>c[x]||=(fn(x));};"
+    },
+    {
+      "q": "What is currying?",
+      "a": "Converting a function with multiple args into a chain of functions with one arg.",
+      "example": "const add=a=>b=>a+b; add(2)(3);"
+    },
+    {
+      "q": "What is the difference between synchronous and asynchronous?",
+      "a": "Synchronous executes in sequence; async doesn't block the main thread.",
+      "example": "setTimeout(()=>console.log('Async'),0); console.log('Sync');"
+    },
+    {
+      "q": "What are ES6 modules?",
+      "a": "Modules using import/export syntax for code reusability.",
+      "example": "export function hello(){}; import {hello} from './mod.js';"
+    },
+    {
+      "q": "What is the difference between shallow and deep equality?",
+      "a": "Shallow checks reference equality; deep checks value equality.",
+      "example": "obj1===obj2 vs JSON.stringify(obj1)===JSON.stringify(obj2);"
+    },
+    {
+      "q": "What is an iterator?",
+      "a": "Object providing next() method returning {value, done}.",
+      "example": "const arr=[1,2]; const it=arr[Symbol.iterator](); it.next();"
+    },
+    {
+      "q": "What is Symbol in JavaScript?",
+      "a": "A unique, immutable primitive value often used as object keys.",
+      "example": "const sym=Symbol('id'); const obj={[sym]:'value'};"
+    },
+    {
+      "q": "What is BigInt?",
+      "a": "A data type for integers beyond Number's safe limit.",
+      "example": "const big=12345678901234567890n;"
+    },
+    {
+      "q": "What are weakMap and weakSet?",
+      "a": "Collections holding weak references, preventing memory leaks.",
+      "example": "let wm=new WeakMap(); let ws=new WeakSet();"
+    },
+    {
+      "q": "What is the difference between apply, call, and bind?",
+      "a": "call invokes a function with arguments; apply uses array args; bind returns a new function.",
+      "example": "func.call(obj,1,2); func.apply(obj,[1,2]); const f=func.bind(obj);"
+    },
+    {
+      "q": "What are promises states?",
+      "a": "pending, fulfilled, rejected.",
+      "example": "new Promise((res,rej)=>res('ok'));"
+    },
+    {
+      "q": "What is optional chaining?",
+      "a": "It safely accesses nested object properties without errors.",
+      "example": "user?.address?.city;"
+    },
+    {
+      "q": "What is nullish coalescing?",
+      "a": "Returns right operand only if left is null or undefined.",
+      "example": "let name=null; console.log(name ?? 'Guest');"
+    },
     {"q": "What are the different data types in JavaScript?", "a": "String, Number, Boolean, Null, Undefined, Symbol, BigInt."},
     {"q": "Explain closure with an example.", "a": "A closure is a function that has access to its own scope, the outer function's scope, and the global scope."},
     {"q": "What is the event loop?", "a": "It handles asynchronous tasks by processing the call stack and the callback queue in JavaScript."},
