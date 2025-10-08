@@ -206,7 +206,7 @@ async function loadModules(){
         qaDiv.setAttribute('tabindex','0');
         qaDiv.setAttribute('aria-expanded','false');
         qaDiv.setAttribute('draggable','true');
-        qaDiv.innerHTML=`<div class='question'>${idx+1}. ${item.q}</div><div class='answer' aria-hidden='true'>${item.a}</div>`;
+        qaDiv.innerHTML=`<div class='question'>${idx+1}. ${item.q}</div><div class='answer' aria-hidden='true'>${item.a} ${item.ex}</div>`;
         questionsContainer.appendChild(qaDiv);
 
         // QA drag
